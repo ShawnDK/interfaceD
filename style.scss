@@ -173,6 +173,11 @@ body{
         margin-top: 25px;
         margin-bottom: 15px;
     }
+    .empty{
+        opacity: 0;
+        width: 270px;
+        height: 1px;
+    }
     .favourite-images{
         @include display-flex();
         width: 80%;

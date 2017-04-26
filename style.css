@@ -224,6 +224,10 @@ body {
     width: 270px;
     margin-top: 25px;
     margin-bottom: 15px; }
+  #destinationsFavourite .empty, #destinationsHistory .empty {
+    opacity: 0;
+    width: 270px;
+    height: 1px; }
   #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images {
     width: 80%; }
 
