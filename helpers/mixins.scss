@@ -1,0 +1,35 @@
+@mixin box-sizing($type){
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	-ms-box-sizing: $type;
+	box-sizing: $type;
+}
+@mixin inputRange(){
+		float:left;
+		position:absolute;
+		left:0;
+      -webkit-appearance: none;
+      margin: 10px 0;
+      width: 100px;
+}
+@mixin inputRangeFocus(){
+      outline: none;
+}
+@mixin inputRangeRunnableTrack(){
+      height: 4px;
+      background: cD($secondary-color,10%);
+}
+@mixin inputRangeSliderThumb(){
+      height: 14px;
+      width: 14px;
+      border-radius: 17px;
+      border:3px solid cD($secondary-color,10%);
+      -webkit-appearance: none;
+      margin-top: -5px;
+}
+@mixin inputRangeSliderThumbNone(){
+      border:none;
+}
+@mixin inputRangeRunnableTrackDirect(){
+      background: cL($accent-color,10%);
+}
