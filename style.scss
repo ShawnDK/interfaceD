@@ -48,7 +48,7 @@ body{
     width: 80%;
     padding: 0 10%;
     //padding-bottom: 20px;
-    background-color: $primary-color;
+    background-color: #15598F;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -58,6 +58,7 @@ body{
     }
     #leftNav{
         width: 10%;
+        max-width: 600px;
         flex-grow: 2;
         @include display-flex();
         @include align-items(center);
@@ -70,6 +71,7 @@ body{
     }
     #rightNav{
         width: 20%;
+        max-width: 400px;
         flex-grow: 1;
         @include display-flex();
         @include justify-content(flex-end);
@@ -128,7 +130,7 @@ body{
       }
 
       input[type="submit"] {
-        background: $secondary-color;
+        background: $primary-color;
         border-top: 1px solid $secondary-color;
         border-bottom: 1px solid $secondary-color;
         color: #fff;
