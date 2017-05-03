@@ -635,15 +635,16 @@ PAYMENT PAGE
 /*********************************
 CONFIRMATION PAGE
 */
-.modalWindowConfirmation {
+#modalWindowConfirmation {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2; }
-  .modalWindowConfirmation .window {
+  #modalWindowConfirmation .window {
     width: 975px;
     height: 400px;
     background-color: #efefef;

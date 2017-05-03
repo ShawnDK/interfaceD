@@ -659,10 +659,11 @@ SEARCH RESULT PAGE
 /*********************************
 CONFIRMATION PAGE
 */
-.modalWindowConfirmation{
+#modalWindowConfirmation{
   width:100vw;
   height:100vh;
   position:fixed;
+  display:none;
   top:0;
   left:0;
   background-color:rgba(0, 0, 0, 0.7);

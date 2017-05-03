@@ -67,7 +67,13 @@ results page - tooltips
 */
 
 $(".stopsVisual").hover(function(){
-  console.log($(this).children().last().css("display","block"));
+  $(this).children().last().css("display","block");
 },function(){
-  console.log($(this).children().last().css("display","none"));
+  $(this).children().last().css("display","none");
 }); 
+
+
+/*BTN SELECT*/
+$(".btnSelect").click(function(){
+  $("#modalWindowConfirmation").css("display","block");
+});
