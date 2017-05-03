@@ -300,6 +300,9 @@ body {
     #flightSearchInfo .dropdownClass .show {
       display: block; }
 
+/*********************************
+SEARCH RESULT PAGE
+*/
 #flightSearchResultsAndFilters {
   width: 100%;
   background-color: #212121;
@@ -512,6 +515,9 @@ body {
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside button:hover {
             background-color: #10436b; }
 
+/*********************************
+PAYMENT PAGE
+*/
 .modalWindowPaymentBG {
   width: 100vw;
   height: 100vh;
@@ -593,6 +599,25 @@ body {
           background-color: green;
           float: right;
           margin-top: -37px; }
+
+/*********************************
+CONFIRMATION PAGE
+*/
+.modalWindowConfirmation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2; }
+  .modalWindowConfirmation .window {
+    width: 975px;
+    height: 400px;
+    background-color: #efefef;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 5px; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
