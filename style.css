@@ -639,7 +639,6 @@ CONFIRMATION PAGE
   width: 100vw;
   height: 100vh;
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -651,6 +650,49 @@ CONFIRMATION PAGE
     margin: auto;
     margin-top: 90px;
     border-radius: 5px; }
+    #modalWindowConfirmation .window .head {
+      width: calc(100% - 20px);
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      background-color: #f9d48e; }
+    #modalWindowConfirmation .window .content {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row; }
+      #modalWindowConfirmation .window .content .info {
+        padding: 10px;
+        flex-grow: 1; }
+      #modalWindowConfirmation .window .content .option .head2 {
+        min-width: 100px;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        padding-left: 60px;
+        padding-right: 60px; }
+        #modalWindowConfirmation .window .content .option .head2 .phrase {
+          padding-bottom: 10px;
+          border-bottom: 1px solid white; }
+      #modalWindowConfirmation .window .content .option .price {
+        width: calc(100% - 40px);
+        padding: 20px; }
+        #modalWindowConfirmation .window .content .option .price div {
+          text-align: center;
+          font-weight: bold;
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 20px;
+          border: 2px solid #15598F; }
+      #modalWindowConfirmation .window .content .option1 .head2 {
+        color: black; }
+        #modalWindowConfirmation .window .content .option1 .head2 .phrase {
+          border-bottom: 1px solid black; }
+      #modalWindowConfirmation .window .content .option2 .head2 {
+        background-color: #196aaa; }
+      #modalWindowConfirmation .window .content .option3 .head2 {
+        background-color: #15598F; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {

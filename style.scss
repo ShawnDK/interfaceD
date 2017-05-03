@@ -663,7 +663,6 @@ CONFIRMATION PAGE
   width:100vw;
   height:100vh;
   position:fixed;
-  display:none;
   top:0;
   left:0;
   background-color:rgba(0, 0, 0, 0.7);
@@ -674,8 +673,71 @@ CONFIRMATION PAGE
     background-color:#efefef;
     margin:auto;margin-top:90px;
     border-radius:5px;
-  }
+    .head{
+      width:calc(100% - 20px);
+      padding:10px;
+      font-size:24px;
+      text-align: center;
+      background-color:cL($primary-color,25%);
+    }
+    .content{
+      margin-bottom:20px;
+      display:flex;
+      flex-direction: row;
+      .info{
+        padding:10px;
+        flex-grow: 1;
+      }
+      .option{
+        .head2{
+          min-width:100px;
+          text-align: center;
+          color:white;
+          padding:20px;
+          padding-left:60px;
+          padding-right:60px;
+          .phrase{
+            padding-bottom:10px;
+            border-bottom: 1px solid white;
+          }
+        }
+        .price{
+          width:calc(100% - 40px);
+          padding:20px;
+          div{
+            text-align: center;
+            font-weight: bold;
+            box-sizing: border-box;
+            width:100%;
+            border-radius: 5px;
+            cursor:pointer;
+            padding:20px;
+            border:2px solid $secondary-color;
+          }
+        }
+      }
+      .option1{
+        .head2{
+          color:black;
+          .phrase{
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+      .option2{
+        .head2{
+          background-color:cL($secondary-color,6%);
+        }
 
+      }
+      .option3{
+        .head2{
+          background-color:$secondary-color;
+        }
+
+      }
+    }
+  }
 }
 
 
