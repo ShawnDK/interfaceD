@@ -1,3 +1,4 @@
+var isLoggedIn = false;
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -79,7 +80,8 @@ $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 });
 /***********************log in***************************/
-var isLoggedIn = false;
+
+
 $(document).ready(function () {
     
     if (localStorage.getItem('username') === null) { 
@@ -94,6 +96,7 @@ $(document).ready(function () {
 $( document ).ready(function() {
   $("#logoutadmin").hide();
   $("#logout").hide(); 
+  $("#signout").hide(); 
 });
 
 $(document).on("click", "#btn-admin-login", function(){
@@ -101,7 +104,7 @@ $(document).on("click", "#btn-admin-login", function(){
   var email = $("#txt-email").val();
   var password = $("#txt-password").val();
   $.post(sLink, {"email": email, "password": password}, function(jData){
-    // console.log(jData);
+    console.log(jData);
     if (jData.success) {
       isLoggedIn = true;
         header('Location:results.html');
