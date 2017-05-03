@@ -644,11 +644,12 @@ CONFIRMATION PAGE
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2; }
   #modalWindowConfirmation .window {
+    height: 80%;
+    overflow-y: auto;
     width: 975px;
-    height: 400px;
     background-color: #efefef;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 5%;
     border-radius: 5px; }
     #modalWindowConfirmation .window .head {
       width: calc(100% - 20px);
@@ -657,12 +658,22 @@ CONFIRMATION PAGE
       text-align: center;
       background-color: #f9d48e; }
     #modalWindowConfirmation .window .content {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       display: flex;
       flex-direction: row; }
       #modalWindowConfirmation .window .content .info {
         padding: 10px;
         flex-grow: 1; }
+        #modalWindowConfirmation .window .content .info .date {
+          margin-top: 150px;
+          margin-right: 30px;
+          text-align: right;
+          font-size: 16px; }
+        #modalWindowConfirmation .window .content .info .time {
+          margin-right: 30px;
+          font-weight: bold;
+          font-size: 20px;
+          text-align: right; }
       #modalWindowConfirmation .window .content .option .head2 {
         min-width: 100px;
         text-align: center;
@@ -673,6 +684,12 @@ CONFIRMATION PAGE
         #modalWindowConfirmation .window .content .option .head2 .phrase {
           padding-bottom: 10px;
           border-bottom: 1px solid white; }
+      #modalWindowConfirmation .window .content .option .thumbs {
+        padding: 10px;
+        text-align: center; }
+        #modalWindowConfirmation .window .content .option .thumbs i {
+          margin-left: 3px;
+          color: #15598F; }
       #modalWindowConfirmation .window .content .option .price {
         width: calc(100% - 40px);
         padding: 20px; }
@@ -685,6 +702,21 @@ CONFIRMATION PAGE
           cursor: pointer;
           padding: 20px;
           border: 2px solid #15598F; }
+        #modalWindowConfirmation .window .content .option .price div:hover {
+          background-color: #1f83d2;
+          color: white; }
+      #modalWindowConfirmation .window .content .option .discountedPrice {
+        text-align: center; }
+        #modalWindowConfirmation .window .content .option .discountedPrice .price {
+          padding: 5px 5px 0 5px;
+          width: calc(100% - 10px);
+          text-decoration: underline;
+          color: #15598f;
+          cursor: pointer; }
+        #modalWindowConfirmation .window .content .option .discountedPrice .club {
+          color: #777;
+          font-weight: bold;
+          font-size: 12px; }
       #modalWindowConfirmation .window .content .option1 .head2 {
         color: black; }
         #modalWindowConfirmation .window .content .option1 .head2 .phrase {
@@ -693,6 +725,8 @@ CONFIRMATION PAGE
         background-color: #196aaa; }
       #modalWindowConfirmation .window .content .option3 .head2 {
         background-color: #15598F; }
+      #modalWindowConfirmation .window .content .option3 .thumbs i {
+        color: #114874; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
