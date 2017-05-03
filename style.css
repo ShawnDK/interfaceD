@@ -158,7 +158,12 @@ body {
     flex-grow: 2; }
     #nav #leftNav a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      line-height: 50px;
+      flex-grow: 1;
+      text-align: center; }
+    #nav #leftNav a:hover {
+      background-color: #104670; }
   #nav #rightNav {
     width: 20%;
     max-width: 400px;
@@ -198,7 +203,10 @@ body {
       background: #F2A615;
       border-top: 1px solid #15598F;
       border-bottom: 1px solid #15598F;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
+    #searchBox .flex-form input[type="submit"]:hover {
+      background: #E5971A; }
     #searchBox .flex-form * {
       border: 0;
       padding: 10px;
