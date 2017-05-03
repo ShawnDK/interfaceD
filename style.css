@@ -154,12 +154,14 @@ body {
     display: none; }
   #nav #leftNav {
     width: 10%;
+    max-width: 600px;
     flex-grow: 2; }
     #nav #leftNav a {
       color: white;
       text-decoration: none; }
   #nav #rightNav {
     width: 20%;
+    max-width: 400px;
     flex-grow: 1;
     color: white; }
     #nav #rightNav img {
@@ -193,7 +195,7 @@ body {
       border-top: 1px solid white;
       border-bottom: 1px solid white; }
     #searchBox .flex-form input[type="submit"] {
-      background: #15598F;
+      background: #F2A615;
       border-top: 1px solid #15598F;
       border-bottom: 1px solid #15598F;
       color: #fff; }
