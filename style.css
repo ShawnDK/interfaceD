@@ -146,7 +146,7 @@ body {
   height: 50px;
   width: 80%;
   padding: 0 10%;
-  background-color: #C62828;
+  background-color: #F2A615;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px; }
@@ -193,9 +193,9 @@ body {
       border-top: 1px solid white;
       border-bottom: 1px solid white; }
     #searchBox .flex-form input[type="submit"] {
-      background: #F6A65A;
-      border-top: 1px solid #F6A65A;
-      border-bottom: 1px solid #F6A65A;
+      background: #15598F;
+      border-top: 1px solid #15598F;
+      border-bottom: 1px solid #15598F;
       color: #fff; }
     #searchBox .flex-form * {
       border: 0;
@@ -213,7 +213,7 @@ body {
 #destinationsFavourite, #destinationsHistory {
   width: 100%;
   padding: 75px 0 75px 0;
-  background-color: #F6A65A; }
+  background-color: #15598F; }
   #destinationsFavourite h1, #destinationsHistory h1 {
     font-size: 30px;
     font-weight: 600;
@@ -240,7 +240,7 @@ body {
 
 #flightSearchInfo {
   border-radius: 3px;
-  background-color: #f59942;
+  background-color: #124b79;
   width: 925px;
   padding: 40px 25px;
   margin: 10px;
@@ -251,7 +251,7 @@ body {
     margin-right: 10px;
     font-size: 15px;
     color: white;
-    background-color: #be2626; }
+    background-color: #efa20d; }
   #flightSearchInfo span {
     margin-right: 10px;
     font-size: 20px;
@@ -261,7 +261,7 @@ body {
     min-width: 120px;
     border: 1px solid rgba(128, 128, 128, 0.4); }
   #flightSearchInfo input:hover {
-    background-color: #57852f;
+    background-color: #104670;
     color: white; }
   #flightSearchInfo .dropdownClass {
     position: relative;
@@ -270,7 +270,7 @@ body {
     /* The container <div> - needed to position the dropdown content */
     /* Dropdown Content (Hidden by Default) */ }
     #flightSearchInfo .dropdownClass .dropbtn {
-      background-color: #c62828;
+      background-color: #f2a615;
       padding: 10px;
       font-size: 15px;
       border-radius: 3px;
@@ -279,7 +279,7 @@ body {
       color: white; }
     #flightSearchInfo .dropdownClass .dropbtn:hover, #flightSearchInfo .dropdownClass .dropbtn:focus {
       color: white;
-      background-color: #57852f; }
+      background-color: #104670; }
     #flightSearchInfo .dropdownClass .dropdown {
       position: relative;
       display: inline-block; }
@@ -291,7 +291,7 @@ body {
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1; }
       #flightSearchInfo .dropdownClass .dropdown-content a {
-        color: #57852f;
+        color: #104670;
         padding: 2px 8px;
         text-decoration: none;
         display: block; }
@@ -306,8 +306,8 @@ body {
   padding-top: 20px;
   font-family: Open Sans, sans-serif; }
   #flightSearchResultsAndFilters #flightSearchFilters {
-    color: #9c1f1f;
-    background-color: #f59942;
+    color: #c9880b;
+    background-color: #124b79;
     width: 250px;
     padding: 5px;
     margin: 5px;
@@ -315,7 +315,7 @@ body {
     #flightSearchResultsAndFilters #flightSearchFilters form {
       padding: 10px;
       font-size: 14px;
-      border-bottom: rgba(198, 40, 40, 0.5) solid 1px; }
+      border-bottom: rgba(242, 166, 21, 0.5) solid 1px; }
       #flightSearchResultsAndFilters #flightSearchFilters form h3 {
         font-weight: bold;
         font-size: 16px;
@@ -340,21 +340,21 @@ body {
       position: absolute;
       left: 3px;
       bottom: 1px;
-      background-color: #f9c08a;
-      border: 1px solid #f9c08a;
+      background-color: #1c75bb;
+      border: 1px solid #1c75bb;
       box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(198, 40, 40, 0.8); }
     #flightSearchResultsAndFilters #flightSearchFilters .radio label:before {
       border-radius: 8px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label:before {
       content: "\2022 ";
-      color: #37541d;
-      background-color: #4f792b;
-      border: 2px solid #facda3;
+      color: #082236;
+      background-color: #0e3d63;
+      border: 2px solid #1f83d2;
       font-size: 14px;
       text-align: center;
       line-height: 13px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label {
-      color: #4f792b;
+      color: #0e3d63;
       margin-top: 2px;
       text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
       font-weight: bold; }
@@ -369,17 +369,17 @@ body {
     #flightSearchResultsAndFilters #flightSearchFilters input[type=range]::-webkit-slider-runnable-track {
       height: 4px;
       cursor: pointer;
-      background: #689f38; }
+      background: #15598f; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=range]::-webkit-slider-thumb {
       height: 20px;
       width: 20px;
       border-radius: 17px;
-      background: #b6da96;
+      background: #57a7e6;
       cursor: pointer;
       -webkit-appearance: none;
       margin-top: -8px; }
   #flightSearchResultsAndFilters #flightSearchResults {
-    color: #f9c08a;
+    color: #1c75bb;
     width: 710px;
     margin: 5px;
     /* background-color:cD($primary-color,0%);
@@ -416,7 +416,7 @@ body {
      }*/ }
     #flightSearchResultsAndFilters #flightSearchResults .flightOption {
       height: 175px;
-      background-color: #9c1f1f;
+      background-color: #c9880b;
       border-radius: 4px;
       margin-bottom: 7px;
       overflow: hidden;
@@ -428,7 +428,7 @@ body {
         #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem {
           height: 73px; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem:nth-child(1) {
-            border-bottom: 1px solid rgba(246, 166, 90, 0.5);
+            border-bottom: 1px solid rgba(21, 89, 143, 0.5);
             margin-bottom: 10px; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .company {
             margin: 0px 15px 0 0; }
@@ -464,18 +464,18 @@ body {
                 outline: none; }
               #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual input[type=range]::-webkit-slider-runnable-track {
                 height: 4px;
-                background: #f38c2a; }
+                background: #0e3d63; }
               #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual input[type=range]::-webkit-slider-thumb {
                 height: 14px;
                 width: 14px;
                 border-radius: 17px;
-                border: 3px solid #f38c2a;
+                border: 3px solid #0e3d63;
                 -webkit-appearance: none;
                 margin-top: -5px; }
               #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual input[type=range].direct::-webkit-slider-thumb {
                 border: none; }
               #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual input[type=range].direct::-webkit-slider-runnable-track {
-                background: #81bf4b; }
+                background: #1c75bb; }
             #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsWords {
               text-align: center; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .landing {
@@ -487,11 +487,11 @@ body {
         float: right;
         width: 170px;
         height: 100%;
-        background-color: #c62828; }
+        background-color: #f2a615; }
         #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
           margin-bottom: 20px; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
-            color: #f9c08a;
+            color: #1c75bb;
             font-weight: bold;
             padding: 0;
             font-size: 16px;
@@ -501,7 +501,7 @@ body {
               width: 35px;
               height: 35px; }
         #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside button {
-          background-color: #689f38;
+          background-color: #15598f;
           color: white;
           border: none;
           border-radius: 4px;
@@ -510,7 +510,7 @@ body {
           font-size: 17px;
           font-weight: bold; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside button:hover {
-            background-color: #54812d; }
+            background-color: #10436b; }
 
 .modalWindowPaymentBG {
   width: 100vw;
