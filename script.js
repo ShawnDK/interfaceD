@@ -212,4 +212,4 @@ FB.logout(function(response) {
  document.location.reload();
  });
 }
->>>>>>> origin/master
+
