@@ -70,7 +70,6 @@ results page - tooltips
 $(".stopsVisual").hover(function(){
   $(this).children().last().css("display","block");
 },function(){
-<<<<<<< HEAD
   $(this).children().last().css("display","none");
 }); 
 
@@ -79,9 +78,7 @@ $(".stopsVisual").hover(function(){
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 });
-=======
-  console.log($(this).children().last().css("display","none"));
-}); 
+
 /*******************************LEANMODAL login ********************************/
 $("#modal_trigger").leanModal({
   top: 100,
