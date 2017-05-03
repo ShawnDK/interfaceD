@@ -48,7 +48,11 @@ body{
     width: 80%;
     padding: 0 10%;
     //padding-bottom: 20px;
+<<<<<<< HEAD
     background-color: #15598F;
+=======
+    background-color: $secondary-color;
+>>>>>>> origin/master
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -273,6 +277,10 @@ body{
   }
 }
 
+
+/*********************************
+SEARCH RESULT PAGE
+*/
 #flightSearchResultsAndFilters{
     width:100%;
     background-color: $background-color;
@@ -528,8 +536,17 @@ body{
   }
 }
  
+ /*********************************
+ PAYMENT PAGE
+ */
 .modalWindowPaymentBG{
-  width:100vw;height:100vh;position:fixed;top:0;left:0;background-color:rgba(0, 0, 0, 0.7);z-index: 2;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
   .window{
     width:800px;height:400px;background-color:#efefef;margin:auto;margin-top:90px;border-radius:5px;
     .head{
@@ -610,6 +627,26 @@ body{
   }
 }
 
+/*********************************
+CONFIRMATION PAGE
+*/
+.modalWindowConfirmation{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  .window{
+    width:975px;
+    height:400px;
+    background-color:#efefef;
+    margin:auto;margin-top:90px;
+    border-radius:5px;
+  }
+
+}
 
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
