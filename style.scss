@@ -444,6 +444,30 @@ SEARCH RESULT PAGE
               input[type=range].direct::-webkit-slider-runnable-track {
                 @include inputRangeRunnableTrackDirect();
               }
+              .tooltip{
+                display:none;
+                top:-10px;left:100px;
+                width: fit-content;
+                position:absolute;
+                background-color:$secondary-color;
+                color:white;
+                padding:4px;
+                font-size:14px;
+                border-radius:4px;
+                .triangle{
+                  top:14px;
+                  left:-14px;
+                  position:absolute;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 0 14px 14px;
+                  border-color: transparent transparent $secondary-color transparent;
+                }
+                span{
+                  display: block;
+                }
+              }
             }
             .stopsWords{
               text-align:center;
