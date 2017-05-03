@@ -489,6 +489,28 @@ SEARCH RESULT PAGE
                 border: none; }
               #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual input[type=range].direct::-webkit-slider-runnable-track {
                 background: #1c75bb; }
+              #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual .tooltip {
+                display: none;
+                top: -10px;
+                left: 100px;
+                width: fit-content;
+                position: absolute;
+                background-color: #15598F;
+                color: white;
+                padding: 4px;
+                font-size: 14px;
+                border-radius: 4px; }
+                #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual .tooltip .triangle {
+                  top: 14px;
+                  left: -14px;
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 0 14px 14px;
+                  border-color: transparent transparent #15598F transparent; }
+                #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsVisual .tooltip span {
+                  display: block; }
             #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .flying .stopsWords {
               text-align: center; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem .landing {

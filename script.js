@@ -59,3 +59,15 @@ DOMburgerMenu[0].onclick = function(){
         DOMmenu.style.display = "flex";
     }
 }
+
+
+
+/**************
+results page - tooltips
+*/
+
+$(".stopsVisual").hover(function(){
+  console.log(this);
+},function(){
+  console.log(this);
+}); 
