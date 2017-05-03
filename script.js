@@ -66,6 +66,7 @@ DOMburgerMenu[0].onclick = function(){
 results page - tooltips
 */
 
+
 $(".stopsVisual").hover(function(){
   $(this).children().last().css("display","block");
 },function(){
