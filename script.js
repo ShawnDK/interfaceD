@@ -78,7 +78,60 @@ $(".stopsVisual").hover(function(){
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 });
+/***********************log in***************************/
+var isLoggedIn = false;
+$(document).ready(function () {
+    
+    if (localStorage.getItem('username') === null) { 
+        $("#txt-email").val('');
+    } else {
+        $("#txt-email").val(localStorage.getItem('username') );
+        
+    }
+});
 
+  
+$( document ).ready(function() {
+  $("#logoutadmin").hide();
+  $("#logout").hide(); 
+});
+
+$(document).on("click", "#btn-admin-login", function(){
+  var sLink = "login.php";
+  var email = $("#txt-email").val();
+  var password = $("#txt-password").val();
+  $.post(sLink, {"email": email, "password": password}, function(jData){
+    // console.log(jData);
+    if (jData.success) {
+      isLoggedIn = true;
+        header('Location:results.html');
+      $("#logoutadmin").show();
+      $("#login").hide();
+      
+//      $(document).on("click", "#link-control", function(){
+//         // hideAllWindowsAndShowOne( "wdw-admin" );
+//          
+//      });
+    }
+  });
+});
+
+
+$(document).on("click", "#logoutadmin",function() {
+  setTimeout(function(){ 
+      document.location.reload(); }, 800);
+});
+
+
+
+$(function() {
+
+    $('#remember-me').click(function() {
+        if ($('#remember-me').is(':checked')) {
+            localStorage.setItem("username",  $("#txt-email").val());
+          }      
+    });
+});
 /*******************************LEANMODAL login ********************************/
 $("#modal_trigger").leanModal({
   top: 100,
