@@ -48,15 +48,15 @@ document.getElementById("myDropdown").onclick = function(e){
 //console.log(o);
 
 
-var open=false;
+var op=false;
 var DOMmenu = document.getElementById("nav");
 var DOMburgerMenu = document.getElementsByClassName("toggleNav");
 DOMburgerMenu[0].onclick = function(){
-    if(open){
+    if(op){
         DOMmenu.style.display = "none";
-        open = false;
+        op = false;
     }else{
-        open=true;
+        op=true;
         DOMmenu.style.display = "flex";
     }
 }
@@ -205,7 +205,7 @@ function signOut() {
 // initialize and setup facebook js sdk
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1498930736807544',
+      appId      : '1375055162582405',
       xfbml      : true,
       version    : 'v2.5'
     });
