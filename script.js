@@ -67,7 +67,7 @@ results page - tooltips
 */
 
 $(".stopsVisual").hover(function(){
-  console.log(this);
+  console.log($(this).children().last().css("display","block"));
 },function(){
-  console.log(this);
+  console.log($(this).children().last().css("display","none"));
 }); 
