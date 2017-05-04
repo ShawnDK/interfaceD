@@ -959,6 +959,7 @@ CONFIRMATION PAGE
             width: 100%;
             display:none;
             height:auto;
+            background-color: #3073a7;
             flex-direction:column;
             align-items: center;
             justify-content: center;
@@ -970,12 +971,19 @@ CONFIRMATION PAGE
                 display:flex;
                 width:100%;
                 flex-direction:column;
+                :first-child{
+                  display: none;
+                }
+                a {
+                  width: 100%;
+                }
                 #logo{
                     display:none;
                 }
             }
             #rightNav{
                 width:  100%;
+                max-width: 768%;
                 display:flex;
                 flex-flow: column;
                 #currency{
@@ -986,7 +994,7 @@ CONFIRMATION PAGE
                         top:0;
                         position:relative;
                         width: 100%;
-                        background-color: $background-color;
+                        background-color: $secondary-color;
                     }
                 }
                 #profile{
@@ -1019,6 +1027,7 @@ CONFIRMATION PAGE
         .toggleNav{
             z-index: 2;
             display:block;
+            box-shadow: 0px 1px 6px #222;
             background-color:$secondary-color;
             width:100%;
             font-size: 25px;line-height: 45px;text-align: center;color:white;text-decoration: none;

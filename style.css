@@ -857,6 +857,7 @@ CONFIRMATION PAGE
       width: 100%;
       display: none;
       height: auto;
+      background-color: #3073a7;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -868,10 +869,15 @@ CONFIRMATION PAGE
         display: flex;
         width: 100%;
         flex-direction: column; }
+        body #nav #leftNav :first-child {
+          display: none; }
+        body #nav #leftNav a {
+          width: 100%; }
         body #nav #leftNav #logo {
           display: none; }
       body #nav #rightNav {
         width: 100%;
+        max-width: 768%;
         display: flex;
         flex-flow: column; }
         body #nav #rightNav #currency {
@@ -882,7 +888,7 @@ CONFIRMATION PAGE
             top: 0;
             position: relative;
             width: 100%;
-            background-color: #212121; }
+            background-color: #15598F; }
         body #nav #rightNav #profile {
           width: 10%;
           margin: 0 45%;
@@ -904,6 +910,7 @@ CONFIRMATION PAGE
     body .toggleNav {
       z-index: 2;
       display: block;
+      box-shadow: 0px 1px 6px #222;
       background-color: #15598F;
       width: 100%;
       font-size: 25px;
