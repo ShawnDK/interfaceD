@@ -4,7 +4,7 @@
 
 $heading-font: Open Sans, sans-serif;
 $font: Open Sans, sans-serif;
-//$texting-font: Merriweather, serif;
+$texting-font: Merriweather, serif;
 $primary-color: #F2A615;
 $secondary-color: #15598F;
 $accent-color: #15598F;
@@ -662,7 +662,7 @@ CONFIRMATION PAGE
 #modalWindowConfirmation{
   width:100vw;
   height:100vh;
-  /*display:none;*/
+  display:none;
   position:fixed;
   top:0;
   left:0;
@@ -796,15 +796,45 @@ CONFIRMATION PAGE
         padding-left:25px;
         padding-right:20px;
         border-radius: 5px;
-        background-color:cL($secondary-color,6%);
-        color:white;
+        background-color:#cccccc;
+        color:#737373;
         font-size:20px;
         font-weight: bold;
+      }
+      .btnContinueAvailable{
+        background-color:cL($secondary-color,6%);
+        color:white;
       }
     }
   }
 }
+#modalWindowCarHotel{
+  width:100vw;
+  height:100vh;
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  .window{
+    height:80%;
+    overflow-y:auto;
+    width:975px;
+    background-color:#efefef;
+    margin:auto;    
+    margin-top:5%;
 
+    border-radius:5px;
+    .head{
+      width:calc(100% - 20px);
+      padding:10px;
+      font-size:24px;
+      text-align: center;
+      background-color:cL($primary-color,5%);
+    }
+  }
+}
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     body{

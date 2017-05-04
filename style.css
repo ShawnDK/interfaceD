@@ -638,7 +638,7 @@ CONFIRMATION PAGE
 #modalWindowConfirmation {
   width: 100vw;
   height: 100vh;
-  /*display:none;*/
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -738,10 +738,37 @@ CONFIRMATION PAGE
         padding-left: 25px;
         padding-right: 20px;
         border-radius: 5px;
-        background-color: #196aaa;
-        color: white;
+        background-color: #cccccc;
+        color: #737373;
         font-size: 20px;
         font-weight: bold; }
+      #modalWindowConfirmation .window .continue .btnContinueAvailable {
+        background-color: #196aaa;
+        color: white; }
+
+#modalWindowCarHotel {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2; }
+  #modalWindowCarHotel .window {
+    height: 80%;
+    overflow-y: auto;
+    width: 975px;
+    background-color: #efefef;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px; }
+    #modalWindowCarHotel .window .head {
+      width: calc(100% - 20px);
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      background-color: #f3af2d; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
