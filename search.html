@@ -4,7 +4,7 @@
 		<title>Bizzybee</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
-	<link rel="shortcut icon" href="images/faviconB.ico">
+	    <link rel="shortcut icon" href="images/faviconB.ico">
         <meta name="google-signin-client_id" content="887416469017-5bhes9v5h5isjimm79gdjck7dsnnc53s.apps.googleusercontent.com">
         <link href="style.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
                         <image src="images/dkflag.png"></image>
                         <span>Dansk (DKK)</span>
                     </div>
-                    <div id="currencyOptions">
+                    <div id="currencyOptions" onblur="myBlurL">
                         <div class="currencyOption">
                             <image src="images/dkflag.png"></image>
                             <span>Dansk (DKK)</span>
@@ -110,7 +110,16 @@
                   
                 <!-- Register Form -->
                 <div class="user_register">
-                  <form action="process.php" method="post" id="myform">
+                  <form action="register.php" method="post" id="myform">
+                    <label>Name</label>
+                    <input type="text" name="name"/>
+                    <br />
+                    <label>Age</label>
+                    <input type="text" name="age"/>
+                    <br />
+                    <label>Image Url</label>
+                    <input type="text" name="image"/>
+                    <br />
                     <label>Email Address</label>
                     <input type="email" name="email"/>
                     <br />
