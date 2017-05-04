@@ -4,7 +4,7 @@
 
 $heading-font: Open Sans, sans-serif;
 $font: Open Sans, sans-serif;
-//$texting-font: Merriweather, serif;
+$texting-font: Merriweather, serif;
 $primary-color: #F2A615;
 $secondary-color: #15598F;
 $accent-color: #15598F;
@@ -579,7 +579,10 @@ SEARCH RESULT PAGE
   .window{
     width:800px;height:400px;background-color:#efefef;margin:auto;margin-top:90px;border-radius:5px;
     .head{
-      width:100%;height:40px;text-align:center;padding-bottom:15px;background-color:black;color:white;font-family: 'Baloo Bhaina', cursive;font-size:30px;
+      width:100%;
+      height:40px;text-align:center;padding-bottom:15px;
+      background-color:black;color:white;
+      font-family: 'Baloo Bhaina', cursive;font-size:30px;
     }
     .content{
       padding:20px 30px;
@@ -662,7 +665,7 @@ CONFIRMATION PAGE
 #modalWindowConfirmation{
   width:100vw;
   height:100vh;
-  /*display:none;*/
+  display:none;
   position:fixed;
   top:0;
   left:0;
@@ -796,15 +799,47 @@ CONFIRMATION PAGE
         padding-left:25px;
         padding-right:20px;
         border-radius: 5px;
-        background-color:cL($secondary-color,6%);
-        color:white;
+        background-color:#cccccc;
+        color:#737373;
         font-size:20px;
         font-weight: bold;
+      }
+      .btnContinueAvailable{
+        background-color:cL($secondary-color,6%);
+        color:white;
       }
     }
   }
 }
+#modalWindowCarHotel{
+  width:100vw;
+  height:100vh;
+ /* display:none;*/
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  .window{
+    height:80%;
+    overflow-y:auto;
+    width:975px;
+    background-color:#efefef;
+    margin:auto;    
+    margin-top:5%;
+    border-radius:5px;
+    .head{
+      width:calc(100% - 20px);
+      padding:10px;
+      font-size:24px;
+      text-align: center;
+      background-color:cL($primary-color,5%);
+    }
+    .content{
 
+    }
+  }
+}
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     body{
@@ -929,6 +964,7 @@ CONFIRMATION PAGE
             width: 100%;
             display:none;
             height:auto;
+            background-color: #3073a7;
             flex-direction:column;
             align-items: center;
             justify-content: center;
@@ -940,12 +976,19 @@ CONFIRMATION PAGE
                 display:flex;
                 width:100%;
                 flex-direction:column;
+                :first-child{
+                  display: none;
+                }
+                a {
+                  width: 100%;
+                }
                 #logo{
                     display:none;
                 }
             }
             #rightNav{
                 width:  100%;
+                max-width: 768%;
                 display:flex;
                 flex-flow: column;
                 #currency{
@@ -956,7 +999,11 @@ CONFIRMATION PAGE
                         top:0;
                         position:relative;
                         width: 100%;
-                        background-color: $background-color;
+                        background-color: $secondary-color;
+                        box-shadow: 0px 0px 12px #3c3c3c;
+                    }
+                    #currencyOptions div:hover{
+                        background-color: #3073a7;
                     }
                 }
                 #profile{
@@ -970,8 +1017,9 @@ CONFIRMATION PAGE
             padding-top: 50px;
             align-items: center;
             .flex-form{
-                width: 600px;
+                width: 90vw;
                 flex-wrap: wrap;
+                border: 8px solid rgba(0, 0, 0, 0.3);
             } 
             .flex-form .first-child{
                 flex-basis: 100%;
@@ -988,7 +1036,8 @@ CONFIRMATION PAGE
         .toggleNav{
             z-index: 2;
             display:block;
-            background-color:$background-color;
+            box-shadow: 0px 1px 6px #222;
+            background-color:$secondary-color;
             width:100%;
             font-size: 25px;line-height: 45px;text-align: center;color:white;text-decoration: none;
         }
