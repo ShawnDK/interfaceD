@@ -201,7 +201,7 @@ $(document).on("click", "#btn-admin-login", function(){
   var email = $("#txt-email").val();
   var password = $("#txt-password").val();
   $.post(sLink, {"email": email, "password": password}, function(jData){
-    //console.log(jData);
+    console.log(jData);
     if (jData.success) {
       isLoggedIn = true;
         //alert("Hello! I am an alert box!!");

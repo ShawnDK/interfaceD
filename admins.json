@@ -6,5 +6,13 @@
         "image": "ffff",
         "email": "lala@la.com",
         "password": "lala"
+    },
+    {
+        "id": "590b32d55e34e",
+        "name": "petyo",
+        "age": "20",
+        "image": "Petyo Porn",
+        "email": "petyozh@yahoo.com",
+        "password": "123456"
     }
 ]
