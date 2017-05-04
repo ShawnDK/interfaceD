@@ -8,7 +8,8 @@
 	   //Get form data
 	   $formdata = array(
 	      'email'=> $_POST['email'],
-	      'password'=> $_POST['password']
+	      'password'=> $_POST['password'],
+          'password'=> $_POST['password'],
 	   );
 
 	   //Get data from existing json file
