@@ -2,11 +2,12 @@
    	
    $myFile = "admins.json";
    $arr_data = array(); // create empty array
-
+   $id = uniqid();
   try
   {
 	   //Get form data
 	   $formdata = array(
+           'id' => $id, 
 	      'email'=> $_POST['email'],
 	      'password'=> $_POST['password'],
           'name'=> $_POST['name'],
