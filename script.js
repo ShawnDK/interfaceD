@@ -79,12 +79,14 @@ if (mq.matches) {
 var mq2 = window.matchMedia( "(max-width: 768px)" );
 
 var DOMmenu = document.getElementById("nav");
-var DOMlogin = document.getElementById("modal_trigger");
-DOMlogin.onclick = function(){
-    if (mq2.matches) {
+  
+$("#modal_trigger").click(function(){
+  if (mq2.matches) {
     DOMmenu.style.display = "none";
-}
-}
+  }
+});
+
+  
 
 //ON UN-FOCUS/BLUR ON LANGUAGES
 
