@@ -80,16 +80,37 @@ $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 });
 
+var c1Selected = 0;
+var c2Selected = 0;
+var isClassAdded = 0;
 $(".option>.price").click(function(){
   $(this).parent().parent().children(".option").children(".price").children().removeClass("selectedOption");
   $(this).children().toggleClass("selectedOption");
-
+if(  $(this).parent().parent().hasClass("c1") ){
+  c1Selected = 1;
+}else{
+  c2Selected = 1;
+}
+if(!isClassAdded){
+  if(c1Selected){
+    if(c2Selected){
+      $(".btnContinue").addClass("btnContinueAvailable");
+      isClassAdded=1;
+    }
+  }
+}
   // $(this).parent().parent().children(".option").children(".price").children().css("background-color","initial");
   // $(this).children().css("background-color","#196aaa");
   
   // console.log($(this).data("checked", 0));
   // console.log($(this).data("checked"));
 });
+
+$(".btnContinue").click(function(){
+  $("#modalWindowConfirmation").css("display","none");
+  $("#modalWindowCarHotel").css("display","block");
+});
+
 
 /***********************log in***************************/
 
