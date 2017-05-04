@@ -86,6 +86,15 @@ DOMlogin.onclick = function(){
 }
 }
 
+//ON UN-FOCUS/BLUR ON LANGUAGES
+
+var x = document.getElementById("currencyOptions");
+x.addEventListener("blur", onBlur, true);
+
+function onBlurL() {
+    document.getElementById("currencyOptions").style.display = "none";
+    console.log("*****");
+}
 
 
 /**************
