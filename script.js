@@ -62,6 +62,38 @@ DOMburgerMenu[0].onclick = function(){
 }
 
 
+//FIX FOR TOGGLING MENU STYLES
+var mq = window.matchMedia( "(min-width: 769px)" );
+mq.addListener(WidthChange);
+WidthChange(mq);
+
+function WidthChange(mq) {
+if (mq.matches) {
+  DOMmenu.style.display = "flex";
+}else{
+    DOMmenu.style.display = "none";
+}
+}
+
+//HIDE MENU WHEN LOGIN IS CLICKED IN MOBIL STYLE
+var mq2 = window.matchMedia( "(max-width: 768px)" );
+
+var DOMmenu = document.getElementById("nav");
+var DOMlogin = document.getElementById("modal_trigger");
+DOMlogin.onclick = function(){
+    if (mq2.matches) {
+    DOMmenu.style.display = "none";
+}
+}
+
+//ON UN-FOCUS/BLUR ON LANGUAGES
+
+
+function myBlurL() {
+    document.getElementById("currencyOptions").style.display = "none";
+    console.log("*****");
+}
+
 
 /**************
 results page - tooltips
