@@ -7,7 +7,6 @@
   {
 	   //Get form data
 	   $formdata = array(
-           'id' => $id, 
 	      'email'=> $_POST['email'],
 	      'password'=> $_POST['password'],
           'name'=> $_POST['name'],
