@@ -110,7 +110,7 @@ $(".stopsVisual").hover(function(){
 /*BTN SELECT - show fare page*/
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
-});
+}); 
 
 var c1Selected = 0;
 var c2Selected = 0;
