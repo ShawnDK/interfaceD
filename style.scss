@@ -814,7 +814,7 @@ CONFIRMATION PAGE
 #modalWindowCarHotel{
   width:100vw;
   height:100vh;
- /* display:none;*/
+  display:none;
   position:fixed;
   top:0;
   left:0;
@@ -836,7 +836,132 @@ CONFIRMATION PAGE
       background-color:cL($primary-color,5%);
     }
     .content{
-
+      .pickDropDetails{
+        overflow: hidden; 
+        margin-top:15px;
+        padding-left:10px;
+        padding-right: 10px;
+        .pickUp{
+          box-sizing: border-box;
+          float:left;
+          width:40%;
+          padding:10px;
+          text-align: center;
+          label{
+            font-weight: bold;
+            font-size:20px;
+          }
+        }
+        .dropOff{
+          box-sizing: border-box;
+          padding:10px;
+          float:left;
+          width:40%;
+          text-align: center;
+          label{
+            font-weight: bold;
+            font-size:20px;
+          }
+        }
+        .age{
+          width:20%;
+          padding:10px;
+          box-sizing: border-box;
+          float:left;
+          text-align: center;
+          label{
+            font-weight: bold;
+            font-size:20px;
+          }
+        }
+      }
+      .options{
+        padding:10px;
+        margin-top:15px;
+        .carOption{
+          border-radius:5px;
+          padding:5px;
+          padding-left: 10px;
+          overflow:hidden;
+          border:1px solid #ccc;
+          height: 200px;
+          .rowImage{
+            float:left;
+            width:310px;
+            h6{
+              margin:0;
+              span{
+                color: #666666;
+                font-weight: 400;              
+              }
+            }
+          }
+          .rowInfo{
+            float:left; 
+            width:310px;
+            .carName{
+              margin-bottom:15px;
+              margin-top:10px;
+              margin-left:20px;
+              h4{
+                margin: 0;
+                margin-left:10px;
+              }
+              h2{
+                margin:0;
+                margin-top:-10px;
+              }
+            }
+            .carIcons{
+              margin-bottom:10px;
+              margin-left:10px;
+              span{
+                margin-right:4px;
+                i{
+                  color:$secondary-color;
+                }
+              }
+            }
+          }
+          .rowContinue{
+            height: 100%;
+            position: relative;
+            float: left;
+            .btnAdd{
+              width: 210px;
+              margin-bottom: 25px;
+              margin-left: 45px;
+              position: absolute;
+              bottom: 0;
+              padding:10px;
+              padding-left:25px;
+              padding-right:20px;
+              border-radius: 5px;
+              background-color:cL($secondary-color,16%);
+              color:white;
+              font-size:20px;
+              font-weight: bold;
+            }
+            .btnAdded{
+              position: absolute;
+              bottom: 0;
+              background-color:cL($secondary-color,6%);
+            }
+          }
+        }
+      }
+      .btnContinue2{
+        padding:10px;
+        padding-left:25px;
+        padding-right:20px;
+        border-radius: 5px;
+        background-color:cL($secondary-color,5%);
+        color:white;
+        float:right;
+        margin:10px;
+        font-size:20px;
+        font-weight: bold;
+      }
     }
   }
 }

@@ -749,7 +749,7 @@ CONFIRMATION PAGE
 #modalWindowCarHotel {
   width: 100vw;
   height: 100vh;
-  /* display:none;*/
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -769,6 +769,109 @@ CONFIRMATION PAGE
       font-size: 24px;
       text-align: center;
       background-color: #f3af2d; }
+    #modalWindowCarHotel .window .content .pickDropDetails {
+      overflow: hidden;
+      margin-top: 15px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      #modalWindowCarHotel .window .content .pickDropDetails .pickUp {
+        box-sizing: border-box;
+        float: left;
+        width: 40%;
+        padding: 10px;
+        text-align: center; }
+        #modalWindowCarHotel .window .content .pickDropDetails .pickUp label {
+          font-weight: bold;
+          font-size: 20px; }
+      #modalWindowCarHotel .window .content .pickDropDetails .dropOff {
+        box-sizing: border-box;
+        padding: 10px;
+        float: left;
+        width: 40%;
+        text-align: center; }
+        #modalWindowCarHotel .window .content .pickDropDetails .dropOff label {
+          font-weight: bold;
+          font-size: 20px; }
+      #modalWindowCarHotel .window .content .pickDropDetails .age {
+        width: 20%;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        text-align: center; }
+        #modalWindowCarHotel .window .content .pickDropDetails .age label {
+          font-weight: bold;
+          font-size: 20px; }
+    #modalWindowCarHotel .window .content .options {
+      padding: 10px;
+      margin-top: 15px; }
+      #modalWindowCarHotel .window .content .options .carOption {
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        height: 200px; }
+        #modalWindowCarHotel .window .content .options .carOption .rowImage {
+          float: left;
+          width: 310px; }
+          #modalWindowCarHotel .window .content .options .carOption .rowImage h6 {
+            margin: 0; }
+            #modalWindowCarHotel .window .content .options .carOption .rowImage h6 span {
+              color: #666666;
+              font-weight: 400; }
+        #modalWindowCarHotel .window .content .options .carOption .rowInfo {
+          float: left;
+          width: 310px; }
+          #modalWindowCarHotel .window .content .options .carOption .rowInfo .carName {
+            margin-bottom: 15px;
+            margin-top: 10px;
+            margin-left: 20px; }
+            #modalWindowCarHotel .window .content .options .carOption .rowInfo .carName h4 {
+              margin: 0;
+              margin-left: 10px; }
+            #modalWindowCarHotel .window .content .options .carOption .rowInfo .carName h2 {
+              margin: 0;
+              margin-top: -10px; }
+          #modalWindowCarHotel .window .content .options .carOption .rowInfo .carIcons {
+            margin-bottom: 10px;
+            margin-left: 10px; }
+            #modalWindowCarHotel .window .content .options .carOption .rowInfo .carIcons span {
+              margin-right: 4px; }
+              #modalWindowCarHotel .window .content .options .carOption .rowInfo .carIcons span i {
+                color: #15598F; }
+        #modalWindowCarHotel .window .content .options .carOption .rowContinue {
+          height: 100%;
+          position: relative;
+          float: left; }
+          #modalWindowCarHotel .window .content .options .carOption .rowContinue .btnAdd {
+            width: 210px;
+            margin-bottom: 25px;
+            margin-left: 45px;
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 20px;
+            border-radius: 5px;
+            background-color: #1f85d6;
+            color: white;
+            font-size: 20px;
+            font-weight: bold; }
+          #modalWindowCarHotel .window .content .options .carOption .rowContinue .btnAdded {
+            position: absolute;
+            bottom: 0;
+            background-color: #196aaa; }
+    #modalWindowCarHotel .window .content .btnContinue2 {
+      padding: 10px;
+      padding-left: 25px;
+      padding-right: 20px;
+      border-radius: 5px;
+      background-color: #1867a5;
+      color: white;
+      float: right;
+      margin: 10px;
+      font-size: 20px;
+      font-weight: bold; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {

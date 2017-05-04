@@ -113,6 +113,21 @@ $(".btnContinue").click(function(){
   }
 });
 
+$(".btnContinue2").click(function(){
+  $("#modalWindowCarHotel").css("display","none");
+  $("#modalWindowDetailsPayment").css("display","block");
+});
+
+$(".btnAdd").click(function(){
+  if($(this).hasClass("btnAdded")){
+    $(this).html("Add");
+  }else{
+    $(this).html("Added");
+  }
+  $(this).toggleClass("btnAdded");
+
+})
+
 
 /***********************log in***************************/
 
