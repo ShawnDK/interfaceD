@@ -1,6 +1,7 @@
 <?php
 	header('Access-Control-Allow-Origin: *');	
 	header('Content-Type: application/json');
+
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 
