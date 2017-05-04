@@ -1,1 +1,10 @@
-null
+[
+    {
+        "id": "590b30bfec5c5",
+        "name": "thao",
+        "age": "23",
+        "image": "ffff",
+        "email": "lala@la.com",
+        "password": "lala"
+    }
+]
