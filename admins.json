@@ -1,18 +1,10 @@
 [
     {
-        "email": "aaa@aaa.com",
-        "password": "aaa"
-    },
-    {
-        "email": "bbb@bbb.com",
-        "password": "bbb"
-    },
-    {
-        "email": "ccc@ccc.com",
-        "password": "ccc"
-    },
-    {
         "email": "root@root.com",
         "password": "root"
+    },
+    {
+        "email": "thaodo0492@yahoo.com",
+        "password": "rot"
     }
 ]
