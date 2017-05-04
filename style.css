@@ -188,6 +188,8 @@ body {
           margin-bottom: 8px; }
         #nav #rightNav #currency #currencyOptions div:hover {
           background-color: #3073a7; }
+  #nav #currency:focus {
+    outline: 0px !important; }
   #nav #profile {
     margin-left: 20px;
     height: 50px;

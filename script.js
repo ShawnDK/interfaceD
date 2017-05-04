@@ -18,6 +18,8 @@ document.getElementById("myDropdown").onclick = function(e){
 */
 
 
+
+
   var o={
     DOMpicked:document.getElementById("currencyPicked"),
     DOMoptionsChildren:document.getElementsByClassName("currencyOption"),
@@ -91,10 +93,21 @@ $("#modal_trigger").click(function(){
 //ON UN-FOCUS/BLUR ON LANGUAGES
 
 
-function myBlurL() {
+/*function myBlurL() {
     document.getElementById("currencyOptions").style.display = "none";
     console.log("*****");
-}
+}*/
+
+$('#currency').focusout(function () {
+    $('#currencyOptions').hide();
+    o.currMenu.isOpen=false;
+});
+/*
+$('#currency').focusin(function () {
+    $('#currencyOptions').show();
+    console.log("555");
+});*/
+
 
 
 /**************
