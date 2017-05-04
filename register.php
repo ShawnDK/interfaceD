@@ -9,7 +9,9 @@
 	   $formdata = array(
 	      'email'=> $_POST['email'],
 	      'password'=> $_POST['password'],
-          'password'=> $_POST['password'],
+          'name'=> $_POST['name'],
+          'age'=> $_POST['age'],
+          'image'=> $_POST['image']
 	   );
 
 	   //Get data from existing json file
