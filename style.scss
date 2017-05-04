@@ -662,6 +662,7 @@ CONFIRMATION PAGE
 #modalWindowConfirmation{
   width:100vw;
   height:100vh;
+  display:none;
   position:fixed;
   top:0;
   left:0;
@@ -681,7 +682,7 @@ CONFIRMATION PAGE
       padding:10px;
       font-size:24px;
       text-align: center;
-      background-color:cL($primary-color,25%);
+      background-color:cL($primary-color,5%);
     }
     .content{
       margin-bottom:30px;
@@ -727,6 +728,10 @@ CONFIRMATION PAGE
         .price{
           width:calc(100% - 40px);
           padding:20px;
+          .selectedOption{
+            background-color:$secondary-color;
+            color:white;
+          }
           div{
             text-align: center;
             font-weight: bold;
@@ -782,6 +787,19 @@ CONFIRMATION PAGE
           }
         }
 
+      }
+    }
+    .continue{
+      padding:20px;
+      .btnContinue{
+        padding:10px;
+        padding-left:25px;
+        padding-right:20px;
+        border-radius: 5px;
+        background-color:cL($secondary-color,6%);
+        color:white;
+        font-size:20px;
+        font-weight: bold;
       }
     }
   }

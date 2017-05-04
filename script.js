@@ -75,10 +75,22 @@ $(".stopsVisual").hover(function(){
 }); 
 
 
-/*BTN SELECT*/
+/*BTN SELECT - show fare page*/
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 });
+
+$(".option>.price").click(function(){
+  $(this).parent().parent().children(".option").children(".price").children().removeClass("selectedOption");
+  $(this).children().toggleClass("selectedOption");
+
+  // $(this).parent().parent().children(".option").children(".price").children().css("background-color","initial");
+  // $(this).children().css("background-color","#196aaa");
+  
+  // console.log($(this).data("checked", 0));
+  // console.log($(this).data("checked"));
+});
+
 /***********************log in***************************/
 
 
