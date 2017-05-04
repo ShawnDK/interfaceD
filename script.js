@@ -107,8 +107,10 @@ if(!isClassAdded){
 });
 
 $(".btnContinue").click(function(){
-  $("#modalWindowConfirmation").css("display","none");
-  $("#modalWindowCarHotel").css("display","block");
+  if(isClassAdded){
+    $("#modalWindowConfirmation").css("display","none");
+    $("#modalWindowCarHotel").css("display","block");
+  }
 });
 
 
