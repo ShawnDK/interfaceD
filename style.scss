@@ -975,6 +975,104 @@ CONFIRMATION PAGE
     }
   }
 }
+#modalWindowDetailsPayment{
+  width:100vw;
+  height:100vh;
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  .window{
+    height:400px;
+    overflow-y:auto;
+    width:975px;
+    background-color:#efefef;
+    margin:auto;    
+    margin-top:5%;
+    border-radius:5px;
+    .head{
+      width:calc(100% - 20px);
+      padding:10px;
+      font-size:24px;
+      text-align: center;
+      background-color:cL($primary-color,5%);
+    }
+    .content{
+      padding:20px 30px;
+      h3{
+        font-family:sans-serif;
+        padding:0px;padding-left:10px;margin:0px;margin-bottom:15px;border-bottom:1px solid rgba(0, 0, 0, 0.2);
+      }
+      .left{width:400px;margin-bottom:40px;margin-right:40px;float:left;
+          .bold{
+            font-weight: bold;
+          }
+          .content{
+            padding:0;
+            @include display-flex();
+            @include flex-flow(column,wrap);
+            @include align-items(center);
+            input{
+                padding:4px;  
+              margin-bottom:6px;
+              width:80%;
+            }
+            div{
+            @include display-flex();
+            @include flex-flow(row,wrap);
+            @include justify-content(space-around);
+              width:84%;
+              input{
+                width:45%;float:left;
+              }
+            }
+          }
+      }
+      .right{width:450px;float:left;
+          img{
+            &:nth-child(5){
+              width:80%;
+              margin-left:10%;
+              margin-top:10px;  
+            }
+          }
+        input{
+                padding:4px;  
+
+          &:nth-child(2){
+            margin-left:10%;
+            width:145px;
+          }
+          &:nth-child(3){
+            width:50px;
+          }
+          &:nth-child(4){
+            width:35px;
+          }
+
+        }
+
+          h3{
+            &:nth-child(6){
+              margin-top:30px;
+            }
+          }
+
+              div{
+            &:nth-child(7){
+                margin-left:40px;font-weight:bold;font-size:25px;
+              }
+            }
+            button.btnPay{
+              width:140px;padding:0px 6px;font-family: 'Baloo Bhaina', cursive;
+              font-size:20px;color:white;background-color:cL($secondary-color,15%); float:right;margin-top:-37px;
+            }
+      }
+    }
+  }
+}
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     body{
