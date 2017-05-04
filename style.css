@@ -774,11 +774,17 @@ CONFIRMATION PAGE
   body {
     background-color: antiquewhite; }
     body #nav {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
+      body #nav #leftNav {
+        width: 40%; }
+    body #rightNav {
+      padding-right: 20px; }
     body #searchBox {
       padding-top: 50px;
       align-items: center; }
       body #searchBox .flex-form {
+        margin-bottom: 0;
         width: 600px;
         flex-wrap: wrap; }
       body #searchBox .flex-form .first-child {
