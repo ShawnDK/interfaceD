@@ -61,6 +61,25 @@ DOMburgerMenu[0].onclick = function(){
     }
 }
 
+//TEST
+var mq = window.matchMedia( "(min-width: 769px)" );
+mq.addListener(WidthChange);
+WidthChange(mq);
+/*
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 769px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}*/
+
+function WidthChange(mq) {
+if (mq.matches) {
+  DOMmenu.style.display = "flex";
+}else{
+    DOMmenu.style.display = "none";
+}
+}
+
 
 
 /**************
