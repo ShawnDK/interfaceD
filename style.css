@@ -864,8 +864,9 @@ CONFIRMATION PAGE
       padding-top: 50px;
       align-items: center; }
       body #searchBox .flex-form {
-        width: 600px;
-        flex-wrap: wrap; }
+        width: 90vw;
+        flex-wrap: wrap;
+        border: 8px solid rgba(0, 0, 0, 0.3); }
       body #searchBox .flex-form .first-child {
         flex-basis: 100%; }
       body #searchBox .flex-form .second-child {
@@ -876,7 +877,7 @@ CONFIRMATION PAGE
     body .toggleNav {
       z-index: 2;
       display: block;
-      background-color: #212121;
+      background-color: #15598F;
       width: 100%;
       font-size: 25px;
       line-height: 45px;

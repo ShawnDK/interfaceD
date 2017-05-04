@@ -970,8 +970,9 @@ CONFIRMATION PAGE
             padding-top: 50px;
             align-items: center;
             .flex-form{
-                width: 600px;
+                width: 90vw;
                 flex-wrap: wrap;
+                border: 8px solid rgba(0, 0, 0, 0.3);
             } 
             .flex-form .first-child{
                 flex-basis: 100%;
@@ -988,7 +989,7 @@ CONFIRMATION PAGE
         .toggleNav{
             z-index: 2;
             display:block;
-            background-color:$background-color;
+            background-color:$secondary-color;
             width:100%;
             font-size: 25px;line-height: 45px;text-align: center;color:white;text-decoration: none;
         }
