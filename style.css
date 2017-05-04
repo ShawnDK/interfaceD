@@ -868,6 +868,7 @@ CONFIRMATION PAGE
         align-items: center;
         display: flex;
         width: 100%;
+        max-width: 768px;
         flex-direction: column; }
         body #nav #leftNav :first-child {
           display: none; }
