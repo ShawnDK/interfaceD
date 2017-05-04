@@ -14,5 +14,9 @@
     {
         "email": "root@root.com",
         "password": "root"
+    },
+    {
+        "email": "ggg@ggg.dk",
+        "password": "ggg"
     }
 ]
