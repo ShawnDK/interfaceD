@@ -984,7 +984,6 @@ CONFIRMATION PAGE
 #modalWindowDetailsPayment{
   width:100vw;
   height:100vh;
-  display:none;
   position:fixed;
   top:0;
   left:0;
@@ -1006,6 +1005,7 @@ CONFIRMATION PAGE
       background-color:cL($primary-color,5%);
     }
     .content{
+      overflow: hidden;
       padding:20px 30px;
       h3{
         font-family:sans-serif;

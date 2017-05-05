@@ -888,7 +888,6 @@ CONFIRMATION PAGE
 #modalWindowDetailsPayment {
   width: 100vw;
   height: 100vh;
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -909,6 +908,7 @@ CONFIRMATION PAGE
       text-align: center;
       background-color: #f3af2d; }
     #modalWindowDetailsPayment .window .content {
+      overflow: hidden;
       padding: 20px 30px; }
       #modalWindowDetailsPayment .window .content h3 {
         font-family: sans-serif;
