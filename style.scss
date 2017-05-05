@@ -691,6 +691,10 @@ CONFIRMATION PAGE
     background-color:#efefef;
     margin:auto;    
     margin-top:5%;
+    
+      .infoTop{
+        display: none;
+      }
 
     border-radius:5px;
     .head{
@@ -1120,7 +1124,18 @@ CONFIRMATION PAGE
     
   #modalWindowConfirmation .window {
     width: 90%;
+    
+      .infoTop{
+        display: block;
+        text-align: center;
+        background-color: #ffcb67;
+      }
+      .info{
+        display: none;
+      }
   }
+  
+  
     
   .modalWindowPaymentBG{
     .window{
