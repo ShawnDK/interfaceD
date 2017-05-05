@@ -1623,6 +1623,12 @@ a.btn_yellow {
   color: #666;
 }
 
+/*********************Edit Profile****************/
 
+#editProfile{
+    @include display-flex();
+    @include flex-flow(row,nowrap);
+    
+}
 
 
