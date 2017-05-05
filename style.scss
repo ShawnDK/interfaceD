@@ -1669,10 +1669,17 @@ a.btn_yellow {
 
 #left{
     background-color: aqua;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
     width: 50%;
 }
 
 #right{
     background-color: bisque;
     width: 50%;
+}
+
+#Profileimage{
+    width: 300px;
 }
