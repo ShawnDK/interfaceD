@@ -882,6 +882,9 @@ CONFIRMATION PAGE
       font-size: 20px;
       font-weight: bold; }
 
+#modalWindowPassengerDetails {
+  display: none; }
+
 #modalWindowDetailsPayment {
   width: 100vw;
   height: 100vh;
@@ -963,6 +966,9 @@ CONFIRMATION PAGE
           background-color: #1f83d2;
           float: right;
           margin-top: -37px; }
+
+#modalWindowSuccessfulPurchase {
+  display: none; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
