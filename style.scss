@@ -325,7 +325,7 @@ SEARCH RESULT PAGE
     form{
       padding:10px;
       font-size: 14px;
-      border-bottom:cFI($primary-color,0.5)  solid 1px;
+      border-bottom: rgb(28, 117, 187) solid 1px;
       h3{
         font-weight:bold;
         font-size: 16px;
@@ -383,6 +383,7 @@ SEARCH RESULT PAGE
     }
     input[type=range] {
     background-color: rgba(0, 0, 0, 0);
+    color: red;
       -webkit-appearance: none;
       margin: 10px 0;
       width: 90%;
@@ -1205,7 +1206,7 @@ CONFIRMATION PAGE
     width:630px;
   }
   #flightSearchResultsAndFilters{
-    width:680px;
+    //width:680px;
     #flightSearchFilters{
       margin:0;width:200px;
     }

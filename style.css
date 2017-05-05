@@ -339,7 +339,7 @@ SEARCH RESULT PAGE
     #flightSearchResultsAndFilters #flightSearchFilters form {
       padding: 10px;
       font-size: 14px;
-      border-bottom: rgba(242, 166, 21, 0.5) solid 1px; }
+      border-bottom: #1c75bb solid 1px; }
       #flightSearchResultsAndFilters #flightSearchFilters form h3 {
         font-weight: bold;
         font-size: 16px;
@@ -387,6 +387,7 @@ SEARCH RESULT PAGE
       font-weight: bold; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=range] {
       background-color: transparent;
+      color: red;
       -webkit-appearance: none;
       margin: 10px 0;
       width: 90%;
@@ -1047,27 +1048,25 @@ CONFIRMATION PAGE
   #flightSearchInfo {
     width: 630px; }
 
-  #flightSearchResultsAndFilters {
-    width: 680px; }
-    #flightSearchResultsAndFilters #flightSearchFilters {
-      margin: 0;
-      width: 200px; }
-    #flightSearchResultsAndFilters #flightSearchResults {
-      width: 460px;
-      margin: 0;
-      margin-left: 10px; }
-      #flightSearchResultsAndFilters #flightSearchResults .flightOption {
-        height: 250px; }
-        #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside {
-          height: 50px;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          flex-direction: row; }
-          #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
-            margin: 0px 20px; }
-            #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
-              margin: 0px 20px; } }
+  #flightSearchResultsAndFilters #flightSearchFilters {
+    margin: 0;
+    width: 200px; }
+  #flightSearchResultsAndFilters #flightSearchResults {
+    width: 460px;
+    margin: 0;
+    margin-left: 10px; }
+    #flightSearchResultsAndFilters #flightSearchResults .flightOption {
+      height: 250px; }
+      #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row; }
+        #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
+          margin: 0px 20px; }
+          #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
+            margin: 0px 20px; } }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   body {
     background-color: antiquewhite; }
