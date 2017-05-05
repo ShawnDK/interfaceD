@@ -1,4 +1,5 @@
 var isLoggedIn = false;
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -240,9 +241,10 @@ $(document).on("click", "#btn-admin-login", function(){
   var email = $("#txt-email").val();
   var password = $("#txt-password").val();
   $.post(sLink, {"email": email, "password": password}, function(jData){
-    //console.log(jData);
+    
     if (jData.success) {
       isLoggedIn = true;
+      //document.location = "editprofile.html";
         //alert("Hello! I am an alert box!!");
       $("#logoutadmin").show();
       $("#login").hide();
@@ -265,6 +267,7 @@ $(function() {
           }      
     });
 });
+
 /*******************************LEANMODAL login ********************************/
 $("#modal_trigger").leanModal({
   top: 100,

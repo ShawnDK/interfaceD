@@ -22,5 +22,13 @@
         "image": "aa",
         "email": "root",
         "password": "root"
+    },
+    {
+        "id": "590c684a41ab4",
+        "name": "Cute Dog",
+        "age": "14",
+        "image": " http:\/\/thao.dk\/petfinder\/images\/a.jpg",
+        "email": "dog",
+        "password": "dog"
     }
 ]
