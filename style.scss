@@ -1134,6 +1134,9 @@ CONFIRMATION PAGE
       .info{
         display: none;
       }
+      .continue{
+        text-align: center;
+      }
   }
   
   
@@ -1306,6 +1309,37 @@ CONFIRMATION PAGE
         }
         
     }
+    
+    #modalWindowConfirmation .window {
+    width: 90%;
+    
+    .content {
+      flex-wrap: wrap;
+    }
+    
+    .content div {
+      width: 45%;
+      max-width: 250px;
+      margin: auto;
+    }
+    .content > div{
+      border: 2px solid #222;
+      border-radius: 5px;
+      margin-top: 6px;
+    }
+    
+      .infoTop{
+        display: block;
+        text-align: center;
+        background-color: #ffcb67;
+      }
+      .info{
+        display: none;
+      }
+      .continue{
+        text-align: center;
+      }
+  }
     
   .modalWindowPaymentBG{
     .window{

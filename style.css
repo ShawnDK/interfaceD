@@ -1007,6 +1007,8 @@ CONFIRMATION PAGE
       background-color: #ffcb67; }
     #modalWindowConfirmation .window .info {
       display: none; }
+    #modalWindowConfirmation .window .continue {
+      text-align: center; }
 
   .modalWindowPaymentBG .window {
     margin-top: 40px;
@@ -1134,6 +1136,27 @@ CONFIRMATION PAGE
       text-align: center;
       color: white;
       text-decoration: none; }
+
+  #modalWindowConfirmation .window {
+    width: 90%; }
+    #modalWindowConfirmation .window .content {
+      flex-wrap: wrap; }
+    #modalWindowConfirmation .window .content div {
+      width: 45%;
+      max-width: 250px;
+      margin: auto; }
+    #modalWindowConfirmation .window .content > div {
+      border: 2px solid #222;
+      border-radius: 5px;
+      margin-top: 6px; }
+    #modalWindowConfirmation .window .infoTop {
+      display: block;
+      text-align: center;
+      background-color: #ffcb67; }
+    #modalWindowConfirmation .window .info {
+      display: none; }
+    #modalWindowConfirmation .window .continue {
+      text-align: center; }
 
   .modalWindowPaymentBG .window {
     width: 400px;
