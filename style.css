@@ -128,58 +128,6 @@ body, #nav #leftNav, #nav #rightNav, #destinationsFavourite, #destinationsHistor
   align-items: center; }
 
 /*
-<<<<<<< HEAD
-Error: Invalid CSS after "...n-items(center)": expected "{", was ";"
-        on line 1700 of interfaceM3/style.scss
-
-1695: 
-1696: #editProfile{
-1697:     @include display-flex();
-1698:     @include flex-flow(row,nowrap);
-1699: <<<<<<< HEAD
-1700:     @include align-items(center);
-1701:     @include justify-content(center);
-1702:     width: 100%;
-1703:     height: 93vh;
-1704: }
-1705: 
-
-Backtrace:
-interfaceM3/style.scss:1700
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...n-items(center)\": expected \"{\", was \";\"\A         on line 1700 of interfaceM3/style.scss\A \A 1695: \A 1696: #editProfile{\A 1697:     @include display-flex();\A 1698:     @include flex-flow(row,nowrap);\A 1699: <<<<<<< HEAD\A 1700:     @include align-items(center);\A 1701:     @include justify-content(center);\A 1702:     width: 100%;\A 1703:     height: 93vh;\A 1704: }\A 1705: "; }
-=======
     Align self
  */
 /*
@@ -391,7 +339,7 @@ SEARCH RESULT PAGE
     #flightSearchResultsAndFilters #flightSearchFilters form {
       padding: 10px;
       font-size: 14px;
-      border-bottom: rgba(242, 166, 21, 0.5) solid 1px; }
+      border-bottom: #1c75bb solid 1px; }
       #flightSearchResultsAndFilters #flightSearchFilters form h3 {
         font-weight: bold;
         font-size: 16px;
@@ -439,6 +387,7 @@ SEARCH RESULT PAGE
       font-weight: bold; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=range] {
       background-color: transparent;
+      color: red;
       -webkit-appearance: none;
       margin: 10px 0;
       width: 90%;
@@ -1099,27 +1048,25 @@ CONFIRMATION PAGE
   #flightSearchInfo {
     width: 630px; }
 
-  #flightSearchResultsAndFilters {
-    width: 680px; }
-    #flightSearchResultsAndFilters #flightSearchFilters {
-      margin: 0;
-      width: 200px; }
-    #flightSearchResultsAndFilters #flightSearchResults {
-      width: 460px;
-      margin: 0;
-      margin-left: 10px; }
-      #flightSearchResultsAndFilters #flightSearchResults .flightOption {
-        height: 250px; }
-        #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside {
-          height: 50px;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          flex-direction: row; }
-          #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
-            margin: 0px 20px; }
-            #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
-              margin: 0px 20px; } }
+  #flightSearchResultsAndFilters #flightSearchFilters {
+    margin: 0;
+    width: 200px; }
+  #flightSearchResultsAndFilters #flightSearchResults {
+    width: 460px;
+    margin: 0;
+    margin-left: 10px; }
+    #flightSearchResultsAndFilters #flightSearchResults .flightOption {
+      height: 250px; }
+      #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row; }
+        #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
+          margin: 0px 20px; }
+          #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
+            margin: 0px 20px; } }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   body {
     background-color: antiquewhite; }
@@ -1222,15 +1169,21 @@ CONFIRMATION PAGE
     .modalWindowPaymentBG .window .right {
       margin-top: 20px; }
 
+  #SearchWrap {
+    padding-bottom: 0px; }
+
   #flightSearchInfo {
     width: 350px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline; }
+    align-items: baseline;
+    justify-content: space-between;
+    color: #ededed; }
     #flightSearchInfo input:nth-child(1) {
-      margin-left: 37px;
-      margin-right: 7px; }
+      margin-right: 7px;
+      order: 1; }
     #flightSearchInfo input:nth-child(4) {
       order: 1;
       width: 100px;
@@ -1240,16 +1193,19 @@ CONFIRMATION PAGE
       width: 100px;
       margin-right: 5px; }
     #flightSearchInfo span:nth-child(2) {
-      margin-right: 23px; }
+      margin-right: 23px;
+      width: 60%; }
     #flightSearchInfo span:nth-child(3) {
       order: 1;
-      margin-right: 5px; }
+      margin-right: 5px;
+      margin-top: 20px; }
     #flightSearchInfo span:nth-child(5) {
       order: 1;
       margin-right: 5px; }
+    #flightSearchInfo div {
+      order: 4; }
     #flightSearchInfo .dropdownClass {
-      margin-bottom: 15px;
-      margin-right: 75px; }
+      margin: 15px auto; }
 
   #flightSearchResultsAndFilters {
     width: 480px; }
@@ -1503,7 +1459,16 @@ a.btn_yellow {
 
 #Profileimage {
   width: 300px;
-  padding-right: 90px; }
+  padding-right: 90px;
+  width: 100%;
+  height: 93vh; }
+
+#left {
+  background-color: aqua;
+  width: 50%; }
+
+#right {
+  background-color: bisque;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> parent of f330a4d... ddd
