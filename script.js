@@ -209,15 +209,9 @@ $(document).on("click", "#btn-admin-login", function(){
         //alert("Hello! I am an alert box!!");
       $("#logoutadmin").show();
       $("#login").hide();
-      
-//      $(document).on("click", "#link-control", function(){
-//         // hideAllWindowsAndShowOne( "wdw-admin" );
-//          
-//      });
     }
   });
 });
-
 
 $(document).on("click", "#logoutadmin",function() {
   setTimeout(function(){ 

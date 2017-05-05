@@ -15,9 +15,7 @@
             //echo $ajAdmins[$i]->email;
 			$success = true;
 			break;
-            
             }
-        
 	}
 
 echo json_encode(["success"=> $success]);
