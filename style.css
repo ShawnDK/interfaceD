@@ -182,7 +182,8 @@ body {
         position: absolute;
         display: none;
         background-color: #15598F;
-        box-shadow: 2px 5px 22px #3c3c3c; }
+        box-shadow: 2px 5px 22px #3c3c3c;
+        z-index: 2; }
         #nav #rightNav #currency #currencyOptions div {
           padding: 10px;
           margin-bottom: 8px; }
@@ -255,7 +256,8 @@ body {
 
 #SearchWrap {
   width: 100%;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background-color: #EDEDED; }
 
 #flightSearchInfo {
   border-radius: 3px;
@@ -263,14 +265,14 @@ body {
   width: 925px;
   padding: 40px 25px;
   margin: 10px;
-  margin-top: 40px; }
+  margin-top: 70px; }
   #flightSearchInfo input {
     border-radius: 4px;
     padding: 10px 20px;
     margin-right: 10px;
     font-size: 15px;
     color: white;
-    background-color: #efa20d; }
+    background-color: #1c75bb; }
   #flightSearchInfo span {
     margin-right: 10px;
     font-size: 20px;
@@ -289,7 +291,7 @@ body {
     /* The container <div> - needed to position the dropdown content */
     /* Dropdown Content (Hidden by Default) */ }
     #flightSearchInfo .dropdownClass .dropbtn {
-      background-color: #f2a615;
+      background-color: #1c75bb;
       padding: 10px;
       font-size: 15px;
       border-radius: 3px;
@@ -324,11 +326,11 @@ SEARCH RESULT PAGE
 */
 #flightSearchResultsAndFilters {
   width: 100%;
-  background-color: #212121;
+  background-color: #EDEDED;
   padding-top: 20px;
   font-family: Open Sans, sans-serif; }
   #flightSearchResultsAndFilters #flightSearchFilters {
-    color: #c9880b;
+    color: #ededed;
     background-color: #124b79;
     width: 250px;
     padding: 5px;
@@ -369,14 +371,17 @@ SEARCH RESULT PAGE
       border-radius: 8px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label:before {
       content: "\2022 ";
-      color: #082236;
-      background-color: #0e3d63;
-      border: 2px solid #1f83d2;
+      /*color: cD($accent-color, 20%);
+      background-color: cD($accent-color, 10%);
+      border:2px solid cL($secondary-color,15%);*/
+      color: #f2a615;
+      background-color: #f2a615;
+      border: 2px solid #c9880b;
       font-size: 14px;
       text-align: center;
       line-height: 13px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label {
-      color: #0e3d63;
+      color: #f2a615;
       margin-top: 2px;
       text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
       font-weight: bold; }
@@ -401,7 +406,7 @@ SEARCH RESULT PAGE
       -webkit-appearance: none;
       margin-top: -8px; }
   #flightSearchResultsAndFilters #flightSearchResults {
-    color: #1c75bb;
+    color: #ededed;
     width: 710px;
     margin: 5px;
     /* background-color:cD($primary-color,0%);
@@ -438,7 +443,7 @@ SEARCH RESULT PAGE
      }*/ }
     #flightSearchResultsAndFilters #flightSearchResults .flightOption {
       height: 175px;
-      background-color: #c9880b;
+      background-color: #1c75bb;
       border-radius: 4px;
       margin-bottom: 7px;
       overflow: hidden;
@@ -531,11 +536,11 @@ SEARCH RESULT PAGE
         float: right;
         width: 170px;
         height: 100%;
-        background-color: #f2a615; }
+        background-color: #124b79; }
         #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
           margin-bottom: 20px; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
-            color: #1c75bb;
+            color: #ededed;
             font-weight: bold;
             padding: 0;
             font-size: 16px;

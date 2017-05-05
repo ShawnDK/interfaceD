@@ -101,6 +101,7 @@ body{
                 //padding: 10px;
                 background-color: #15598F;
                 box-shadow: 2px 5px 22px #3c3c3c;
+                z-index: 2;
                 div {
                   padding: 10px;
                   margin-bottom: 8px;
@@ -220,6 +221,7 @@ body{
     @include display-flex();
     @include justify-content(center);
     padding-bottom: 20px;
+    background-color: #EDEDED;
 }
 #flightSearchInfo{
     border-radius:3px;
@@ -230,7 +232,7 @@ body{
     width:925px;
     padding:40px 25px;
     margin:10px;
-    margin-top: 40px;
+    margin-top: 70px;
 
   input{
     border-radius:4px;
@@ -238,7 +240,8 @@ body{
     margin-right: 10px;
     font-size: 15px;
       color:white;
-    background-color:cD($primary-color,2%);
+    //background-color:cD($primary-color,2%);
+    background-color: #1c75bb;
   }
     span{
         margin-right: 10px;
@@ -257,7 +260,8 @@ body{
   .dropdownClass{
     position:relative; display: inline-block;
     .dropbtn {
-      background-color: cL($primary-color,0%);
+      //background-color: cL($primary-color,0%);
+      background-color: #1c75bb;
       padding: 10px;
       font-size: 15px;
       border-radius:3px;
@@ -301,7 +305,8 @@ SEARCH RESULT PAGE
 */
 #flightSearchResultsAndFilters{
     width:100%;
-    background-color: $background-color;
+    //background-color: $background-color;
+    background-color: #EDEDED;
     //margin-top: 40px;
     padding-top: 20px;
     @include display-flex();
@@ -310,7 +315,8 @@ SEARCH RESULT PAGE
     @include flex-flow(row,wrap);
     font-family:$heading-font;
   #flightSearchFilters{
-    color:cD($primary-color,10%);
+    //color:cD($primary-color,10%);
+    color: #ededed;
     background-color:cD($secondary-color,5%);
     width:250px;
     padding:5px;
@@ -358,15 +364,19 @@ SEARCH RESULT PAGE
     }
     input[type=radio]:checked + label:before {
       content: "\2022 ";
-      color: cD($accent-color, 20%);
+      /*color: cD($accent-color, 20%);
       background-color: cD($accent-color, 10%);
-      border:2px solid cL($secondary-color,15%);
+      border:2px solid cL($secondary-color,15%);*/
+      color: #f2a615;
+      background-color: #f2a615;
+      border: 2px solid #c9880b;
       font-size: 14px;
       text-align: center;
       line-height: 13px;
     }
     input[type=radio]:checked + label{
-      color:cD($accent-color,10%);
+      //color:cD($accent-color,10%);
+      color: #f2a615;
       margin-top:2px;
       text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
       font-weight:bold;
@@ -400,12 +410,14 @@ SEARCH RESULT PAGE
     #flightDurationFilter{}
   }
   #flightSearchResults{
-    color:cL($secondary-color,10%);
+    //color:cL($secondary-color,10%);
+    color: #ededed;
     width:710px;
     margin:5px;
     .flightOption{
     height: 175px;
-    background-color:cD($primary-color,10%);
+    //background-color:cD($primary-color,10%);
+    background-color: #1c75bb;
     border-radius: 4px;
     margin-bottom:7px;
     overflow:hidden;
@@ -513,13 +525,15 @@ SEARCH RESULT PAGE
         float:right;
         width:170px;
         height:100%;
-        background-color:cD($primary-color,0%);
+        //background-color:cD($primary-color,0%);
+        background-color: #124b79;
         .btnGroup{
           margin-bottom:20px;
           @include display-flex();
           @include justify-content(space-around);
           button{
-            color:cL($secondary-color,10%);
+            //color:cL($secondary-color,10%);
+            color: #ededed;
             font-weight: bold;
             padding:0;
             font-size:16px;
