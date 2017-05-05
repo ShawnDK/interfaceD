@@ -2,7 +2,12 @@ var isLoggedIn = false;
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
+$("#myDropdown a").click(function(){
+  console.log($(this).html());
+  var a = $(this).html();
+  $(this).html($(".dropdownClass .dropbtn").html());
+  $(".dropdownClass .dropbtn").html(a);
+});
 // Close the dropdown menu if the user clicks outside of it
 /*window.onclick = function(event) {
     console.log();
