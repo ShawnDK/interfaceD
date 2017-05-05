@@ -1366,12 +1366,25 @@ CONFIRMATION PAGE
       }
     }
   }
+  
+  #SearchWrap {
+    padding-bottom: 0px;
+  }
+  
   #flightSearchInfo{
-    width:350px;display:flex;flex-direction:row;flex-wrap: wrap; align-items: baseline;
+    width:350px;
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #ededed;
     input{
       &:nth-child(1){
-        margin-left:37px;
+        //margin-left:37px;
         margin-right:7px;
+        order: 1;
       }
       &:nth-child(4){
         order:1;width:100px;
@@ -1385,18 +1398,23 @@ CONFIRMATION PAGE
     span{
       &:nth-child(2){
         margin-right:23px;
+        width: 60%;
       }
       &:nth-child(3){
         order:1;
         margin-right:5px;
+        margin-top: 20px;
       }
       &:nth-child(5){
         order:1;
         margin-right:5px;
       }
     }
-    .dropdownClass{margin-bottom:15px;
-      margin-right:75px;
+    div{
+      order: 4;
+    }
+    .dropdownClass{
+       margin: 15px auto;
     }
   }
   #flightSearchResultsAndFilters{
