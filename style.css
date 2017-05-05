@@ -8,7 +8,7 @@
 /*
     Display
  */
-body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div, #editProfile {
+body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flexbox;
@@ -19,7 +19,7 @@ body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #d
 /*
     Flex direction
  */
-#nav, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content div, #editProfile {
+#nav, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -38,13 +38,13 @@ body, #destinationsFavourite, #destinationsHistory, #flightSearchResultsAndFilte
 /*
     Flex wrap
  */
-#nav, #destinationsFavourite, #destinationsHistory, #editProfile {
+#nav, #destinationsFavourite, #destinationsHistory {
   -webkit-flex-wrap: nowrap;
   -moz-flex-wrap: nowrap;
   -ms-flex-wrap: none;
   flex-wrap: nowrap; }
 
-body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div {
+body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -98,7 +98,7 @@ body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory
   -webkit-justify-content: space-between;
   justify-content: space-between; }
 
-#flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content div {
+#flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -moz-justify-content: space-around;
   -webkit-justify-content: space-around;
   justify-content: space-around; }
@@ -182,8 +182,7 @@ body {
         position: absolute;
         display: none;
         background-color: #15598F;
-        box-shadow: 2px 5px 22px #3c3c3c;
-        z-index: 2; }
+        box-shadow: 2px 5px 22px #3c3c3c; }
         #nav #rightNav #currency #currencyOptions div {
           padding: 10px;
           margin-bottom: 8px; }
@@ -256,8 +255,7 @@ body {
 
 #SearchWrap {
   width: 100%;
-  padding-bottom: 20px;
-  background-color: #EDEDED; }
+  padding-bottom: 20px; }
 
 #flightSearchInfo {
   border-radius: 3px;
@@ -265,14 +263,14 @@ body {
   width: 925px;
   padding: 40px 25px;
   margin: 10px;
-  margin-top: 70px; }
+  margin-top: 40px; }
   #flightSearchInfo input {
     border-radius: 4px;
     padding: 10px 20px;
     margin-right: 10px;
     font-size: 15px;
     color: white;
-    background-color: #1c75bb; }
+    background-color: #efa20d; }
   #flightSearchInfo span {
     margin-right: 10px;
     font-size: 20px;
@@ -291,7 +289,7 @@ body {
     /* The container <div> - needed to position the dropdown content */
     /* Dropdown Content (Hidden by Default) */ }
     #flightSearchInfo .dropdownClass .dropbtn {
-      background-color: #1c75bb;
+      background-color: #f2a615;
       padding: 10px;
       font-size: 15px;
       border-radius: 3px;
@@ -326,11 +324,11 @@ SEARCH RESULT PAGE
 */
 #flightSearchResultsAndFilters {
   width: 100%;
-  background-color: #EDEDED;
+  background-color: #212121;
   padding-top: 20px;
   font-family: Open Sans, sans-serif; }
   #flightSearchResultsAndFilters #flightSearchFilters {
-    color: #ededed;
+    color: #c9880b;
     background-color: #124b79;
     width: 250px;
     padding: 5px;
@@ -371,17 +369,14 @@ SEARCH RESULT PAGE
       border-radius: 8px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label:before {
       content: "\2022 ";
-      /*color: cD($accent-color, 20%);
-      background-color: cD($accent-color, 10%);
-      border:2px solid cL($secondary-color,15%);*/
-      color: #f2a615;
-      background-color: #f2a615;
-      border: 2px solid #c9880b;
+      color: #082236;
+      background-color: #0e3d63;
+      border: 2px solid #1f83d2;
       font-size: 14px;
       text-align: center;
       line-height: 13px; }
     #flightSearchResultsAndFilters #flightSearchFilters input[type=radio]:checked + label {
-      color: #f2a615;
+      color: #0e3d63;
       margin-top: 2px;
       text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
       font-weight: bold; }
@@ -407,7 +402,7 @@ SEARCH RESULT PAGE
       -webkit-appearance: none;
       margin-top: -8px; }
   #flightSearchResultsAndFilters #flightSearchResults {
-    color: #ededed;
+    color: #1c75bb;
     width: 710px;
     margin: 5px;
     /* background-color:cD($primary-color,0%);
@@ -444,7 +439,7 @@ SEARCH RESULT PAGE
      }*/ }
     #flightSearchResultsAndFilters #flightSearchResults .flightOption {
       height: 175px;
-      background-color: #1c75bb;
+      background-color: #c9880b;
       border-radius: 4px;
       margin-bottom: 7px;
       overflow: hidden;
@@ -537,11 +532,11 @@ SEARCH RESULT PAGE
         float: right;
         width: 170px;
         height: 100%;
-        background-color: #124b79; }
+        background-color: #f2a615; }
         #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup {
           margin-bottom: 20px; }
           #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup button {
-            color: #ededed;
+            color: #1c75bb;
             font-weight: bold;
             padding: 0;
             font-size: 16px;
@@ -751,6 +746,8 @@ CONFIRMATION PAGE
     #modalWindowConfirmation .window .continue {
       padding: 20px; }
       #modalWindowConfirmation .window .continue .btnContinue {
+        float: right;
+        margin-bottom: 10px;
         padding: 10px;
         padding-left: 25px;
         padding-right: 20px;
@@ -903,7 +900,7 @@ CONFIRMATION PAGE
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2; }
   #modalWindowDetailsPayment .window {
-    height: 600px;
+    height: 450px;
     overflow-y: auto;
     width: 975px;
     background-color: #efefef;
@@ -939,11 +936,19 @@ CONFIRMATION PAGE
             padding: 4px;
             margin-bottom: 6px;
             width: 80%; }
-          #modalWindowDetailsPayment .window .content .left .content div {
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs input {
+            width: 39%;
+            float: left;
+            margin-right: 4px; }
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs select {
+            float: left;
+            height: 27px;
+            margin-right: 4px; }
+          #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
             width: 84%; }
-            #modalWindowDetailsPayment .window .content .left .content div input {
+            #modalWindowDetailsPayment .window .content .left .content .doubleInputs input {
               width: 45%;
-              float: left; }
+              float: right; }
       #modalWindowDetailsPayment .window .content .right {
         width: 450px;
         float: left; }
@@ -960,8 +965,13 @@ CONFIRMATION PAGE
             width: 50px; }
           #modalWindowDetailsPayment .window .content .right input:nth-child(4) {
             width: 35px; }
+        #modalWindowDetailsPayment .window .content .right input.same {
+          width: 105px; }
         #modalWindowDetailsPayment .window .content .right h3:nth-child(6) {
           margin-top: 30px; }
+        #modalWindowDetailsPayment .window .content .right h3 select {
+          margin-left: 20px;
+          height: 19px; }
         #modalWindowDetailsPayment .window .content .right div:nth-child(7) {
           margin-left: 40px;
           font-weight: bold;
@@ -1437,18 +1447,5 @@ a.btn_yellow {
   padding: 10px;
   border: 1px solid #DDD;
   color: #666; }
-
-/*****************Edit Profile*************/
-#editProfile {
-  width: 100%;
-  height: 93vh; }
-
-#left {
-  background-color: aqua;
-  width: 50%; }
-
-#right {
-  background-color: bisque;
-  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

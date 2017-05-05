@@ -827,6 +827,8 @@ CONFIRMATION PAGE
     .continue{
       padding:20px;
       .btnContinue{
+        float:right;
+        margin-bottom:10px;
         padding:10px;
         padding-left:25px;
         padding-right:20px;
@@ -1010,7 +1012,7 @@ CONFIRMATION PAGE
   background-color:rgba(0, 0, 0, 0.7);
   z-index: 2;
   .window{
-    height:600px;
+    height:450px;
     overflow-y:auto;
     width:975px;
     background-color:#efefef;
@@ -1045,13 +1047,24 @@ CONFIRMATION PAGE
               margin-bottom:6px;
               width:80%;
             }
-            div{
+            .trippleInputs{
+              input{
+                width:39%;float:left;
+                margin-right:4px;
+              }
+              select{
+                float:left;
+                height:27px;
+                margin-right:4px;
+              }
+            }
+            .doubleInputs{
             @include display-flex();
             @include flex-flow(row,wrap);
             @include justify-content(space-around);
               width:84%;
               input{
-                width:45%;float:left;
+                width:45%;float:right;
               }
             }
           }
@@ -1077,10 +1090,18 @@ CONFIRMATION PAGE
           &:nth-child(4){
             width:35px;
           }
+
+        }
+        input.same{
+          width:105px;
         }
         h3{
           &:nth-child(6){
             margin-top:30px;
+          }
+          select{
+            margin-left: 20px;
+            height: 19px;
           }
         }
         div{
@@ -1684,10 +1705,17 @@ a.btn_yellow {
 
 #left{
     background-color: aqua;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
     width: 50%;
 }
 
 #right{
     background-color: bisque;
     width: 50%;
+}
+
+#Profileimage{
+    width: 300px;
 }

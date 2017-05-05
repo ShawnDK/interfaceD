@@ -146,6 +146,7 @@ if(!isClassAdded){
     }
   }
 }
+
   // $(this).parent().parent().children(".option").children(".price").children().css("background-color","initial");
   // $(this).children().css("background-color","#196aaa");
   
@@ -165,6 +166,11 @@ $(".btnContinue2").click(function(){
   $("#modalWindowDetailsPayment").css("display","block");
 });
 
+$(".btnPay").click(function(){
+  $("#modalWindowDetailsPayment").css("display","none");
+  $("#modalWindowSuccessfulPurchase").css("display","block");
+});
+
 $(".btnAdd").click(function(){
   if($(this).hasClass("btnAdded")){
     $(this).html("Add");
@@ -173,7 +179,7 @@ $(".btnAdd").click(function(){
   }
   $(this).toggleClass("btnAdded");
 
-})
+});
 
 
 /***********************log in***************************/
