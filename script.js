@@ -179,7 +179,7 @@ $(".btnAdd").click(function(){
   }
   $(this).toggleClass("btnAdded");
 
-})
+});
 
 
 /***********************log in***************************/
