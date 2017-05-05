@@ -1,5 +1,5 @@
 /*
-Error: Invalid CSS after "    width: 100%": expected "{", was ";"
+Error: Invalid CSS after "...n-items(center)": expected "{", was ";"
         on line 1700 of interfaceM3/style.scss
 
 1695: 
@@ -7,12 +7,12 @@ Error: Invalid CSS after "    width: 100%": expected "{", was ";"
 1697:     @include display-flex();
 1698:     @include flex-flow(row,nowrap);
 1699: <<<<<<< HEAD
-1700:     width: 100%;
-1701:     height: 93vh;
-1702: }
-1703: 
-1704: #left{
-1705:     background-color: aqua;
+1700:     @include align-items(center);
+1701:     @include justify-content(center);
+1702:     width: 100%;
+1703:     height: 93vh;
+1704: }
+1705: 
 
 Backtrace:
 interfaceM3/style.scss:1700
@@ -48,4 +48,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"    width: 100%\": expected \"{\", was \";\"\A         on line 1700 of interfaceM3/style.scss\A \A 1695: \A 1696: #editProfile{\A 1697:     @include display-flex();\A 1698:     @include flex-flow(row,nowrap);\A 1699: <<<<<<< HEAD\A 1700:     width: 100%;\A 1701:     height: 93vh;\A 1702: }\A 1703: \A 1704: #left{\A 1705:     background-color: aqua;"; }
+  content: "Error: Invalid CSS after \"...n-items(center)\": expected \"{\", was \";\"\A         on line 1700 of interfaceM3/style.scss\A \A 1695: \A 1696: #editProfile{\A 1697:     @include display-flex();\A 1698:     @include flex-flow(row,nowrap);\A 1699: <<<<<<< HEAD\A 1700:     @include align-items(center);\A 1701:     @include justify-content(center);\A 1702:     width: 100%;\A 1703:     height: 93vh;\A 1704: }\A 1705: "; }

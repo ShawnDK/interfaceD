@@ -325,7 +325,7 @@ SEARCH RESULT PAGE
     form{
       padding:10px;
       font-size: 14px;
-      border-bottom:cFI($primary-color,0.5)  solid 1px;
+      border-bottom: rgb(28, 117, 187) solid 1px;
       h3{
         font-weight:bold;
         font-size: 16px;
@@ -383,6 +383,7 @@ SEARCH RESULT PAGE
     }
     input[type=range] {
     background-color: rgba(0, 0, 0, 0);
+    color: red;
       -webkit-appearance: none;
       margin: 10px 0;
       width: 90%;
@@ -1205,7 +1206,7 @@ CONFIRMATION PAGE
     width:630px;
   }
   #flightSearchResultsAndFilters{
-    width:680px;
+    //width:680px;
     #flightSearchFilters{
       margin:0;width:200px;
     }
@@ -1365,12 +1366,25 @@ CONFIRMATION PAGE
       }
     }
   }
+  
+  #SearchWrap {
+    padding-bottom: 0px;
+  }
+  
   #flightSearchInfo{
-    width:350px;display:flex;flex-direction:row;flex-wrap: wrap; align-items: baseline;
+    width:350px;
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #ededed;
     input{
       &:nth-child(1){
-        margin-left:37px;
+        //margin-left:37px;
         margin-right:7px;
+        order: 1;
       }
       &:nth-child(4){
         order:1;width:100px;
@@ -1384,18 +1398,23 @@ CONFIRMATION PAGE
     span{
       &:nth-child(2){
         margin-right:23px;
+        width: 60%;
       }
       &:nth-child(3){
         order:1;
         margin-right:5px;
+        margin-top: 20px;
       }
       &:nth-child(5){
         order:1;
         margin-right:5px;
       }
     }
-    .dropdownClass{margin-bottom:15px;
-      margin-right:75px;
+    div{
+      order: 4;
+    }
+    .dropdownClass{
+       margin: 15px auto;
     }
   }
   #flightSearchResultsAndFilters{
@@ -1677,6 +1696,7 @@ a.btn_yellow {
 #editProfile{
     @include display-flex();
     @include flex-flow(row,nowrap);
+<<<<<<< HEAD
     @include align-items(center);
     @include justify-content(center);
     width: 100%;
@@ -1692,4 +1712,18 @@ a.btn_yellow {
 #Profileimage{
     width: 300px;
     padding-right: 90px;
+=======
+    width: 100%;
+    height: 93vh;
+}
+
+#left{
+    background-color: aqua;
+    width: 50%;
+}
+
+#right{
+    background-color: bisque;
+    width: 50%;
+>>>>>>> origin/master
 }

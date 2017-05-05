@@ -2,7 +2,12 @@ var isLoggedIn = false;
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
+$("#myDropdown a").click(function(){
+  console.log($(this).html());
+  var a = $(this).html();
+  $(this).html($(".dropdownClass .dropbtn").html());
+  $(".dropdownClass .dropbtn").html(a);
+});
 // Close the dropdown menu if the user clicks outside of it
 /*window.onclick = function(event) {
     console.log();
@@ -119,13 +124,21 @@ $(".stopsVisual").hover(function(){
   $(this).children().last().css("display","block");
 },function(){
   $(this).children().last().css("display","none");
-}); 
+});   
 
 
 /*BTN SELECT - show fare page*/
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 }); 
+
+$('#modalWindowConfirmation').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowConfirmation > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
+
 
 var c1Selected = 0;
 var c2Selected = 0;
@@ -146,6 +159,7 @@ if(!isClassAdded){
     }
   }
 }
+
   // $(this).parent().parent().children(".option").children(".price").children().css("background-color","initial");
   // $(this).children().css("background-color","#196aaa");
   
@@ -159,10 +173,33 @@ $(".btnContinue").click(function(){
     $("#modalWindowCarHotel").css("display","block");
   }
 });
+$('#modalWindowCarHotel').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowCarHotel > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
 
 $(".btnContinue2").click(function(){
   $("#modalWindowCarHotel").css("display","none");
   $("#modalWindowDetailsPayment").css("display","block");
+});
+$('#modalWindowDetailsPayment').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowDetailsPayment > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
+
+$(".btnPay").click(function(){
+  $("#modalWindowDetailsPayment").css("display","none");
+  $("#modalWindowSuccessfulPurchase").css("display","block");
+});
+$('#modalWindowSuccessfulPurchase').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowSuccessfulPurchase > .window').on('click', function(e) {  
+    e.stopPropagation();
 });
 
 $(".btnAdd").click(function(){
@@ -173,7 +210,7 @@ $(".btnAdd").click(function(){
   }
   $(this).toggleClass("btnAdded");
 
-})
+});
 
 
 /***********************log in***************************/
