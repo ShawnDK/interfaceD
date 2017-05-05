@@ -164,6 +164,8 @@ body {
       text-align: center; }
     #nav #leftNav a:hover {
       background-color: #104670; }
+    #nav #leftNav div a:hover {
+      background-color: transparent; }
   #nav #rightNav {
     width: 20%;
     max-width: 400px;
@@ -903,7 +905,7 @@ CONFIRMATION PAGE
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2; }
   #modalWindowDetailsPayment .window {
-    height: 600px;
+    height: 500px;
     overflow-y: auto;
     width: 975px;
     background-color: #efefef;
@@ -939,6 +941,12 @@ CONFIRMATION PAGE
             padding: 4px;
             margin-bottom: 6px;
             width: 80%; }
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs select {
+            height: 27px; }
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs input {
+            margin-left: 4px;
+            width: 37%;
+            float: left; }
           #modalWindowDetailsPayment .window .content .left .content div {
             width: 84%; }
             #modalWindowDetailsPayment .window .content .left .content div input {
@@ -960,6 +968,8 @@ CONFIRMATION PAGE
             width: 50px; }
           #modalWindowDetailsPayment .window .content .right input:nth-child(4) {
             width: 35px; }
+        #modalWindowDetailsPayment .window .content .right input.same {
+          width: 105px; }
         #modalWindowDetailsPayment .window .content .right h3:nth-child(6) {
           margin-top: 30px; }
         #modalWindowDetailsPayment .window .content .right div:nth-child(7) {
@@ -977,7 +987,32 @@ CONFIRMATION PAGE
           margin-top: -37px; }
 
 #modalWindowSuccessfulPurchase {
-  display: none; }
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2; }
+  #modalWindowSuccessfulPurchase .window {
+    height: 150px;
+    overflow-y: auto;
+    width: 975px;
+    background-color: #efefef;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px; }
+    #modalWindowSuccessfulPurchase .window .head {
+      width: calc(100% - 20px);
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      background-color: #f3af2d; }
+    #modalWindowSuccessfulPurchase .window .content {
+      overflow: hidden;
+      text-align: center;
+      padding: 35px 30px; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {

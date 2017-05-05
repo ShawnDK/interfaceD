@@ -234,7 +234,10 @@ $( document ).ready(function() {
   $("#signout").hide(); 
 });
 
-
+$("#goToResults").click(function(){
+  document.location.href = 'results.html'; 
+      window.location.href = 'results.html'; 
+});
 
 $(document).on("click", "#btn-admin-login", function(){
   var sLink = "login.php";
@@ -248,6 +251,7 @@ $(document).on("click", "#btn-admin-login", function(){
         //alert("Hello! I am an alert box!!");
       $("#logoutadmin").show();
       $("#login").hide();
+      window.location.href = 'editprofile.html'; 
     }
   });
 });

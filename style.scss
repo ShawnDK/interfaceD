@@ -73,6 +73,11 @@ body{
         a:hover{
             background-color: #104670;
         }
+        div{
+          a:hover{
+              background-color: transparent;
+          }
+        }
     }
     #rightNav{
         width: 20%;
@@ -1010,7 +1015,7 @@ CONFIRMATION PAGE
   background-color:rgba(0, 0, 0, 0.7);
   z-index: 2;
   .window{
-    height:600px;
+    height:500px;
     overflow-y:auto;
     width:975px;
     background-color:#efefef;
@@ -1041,9 +1046,19 @@ CONFIRMATION PAGE
             @include flex-flow(column,wrap);
             @include align-items(center);
             input{
-                padding:4px;  
+              padding:4px;  
               margin-bottom:6px;
               width:80%;
+            }
+            .trippleInputs{
+              select{
+                height: 27px;
+              }
+              input{
+              margin-left:4px;
+              width:37%;
+              float:left;
+              }
             }
             div{
             @include display-flex();
@@ -1078,6 +1093,9 @@ CONFIRMATION PAGE
             width:35px;
           }
         }
+        input.same{
+          width:105px;
+        }
         h3{
           &:nth-child(6){
             margin-top:30px;
@@ -1097,7 +1115,35 @@ CONFIRMATION PAGE
   }
 }
 #modalWindowSuccessfulPurchase{
+  width:100vw;
+  height:100vh;
   display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  .window{
+    height:150px;
+    overflow-y:auto;
+    width:975px;
+    background-color:#efefef;
+    margin:auto;    
+    margin-top:5%;
+    border-radius:5px;
+    .head{
+      width:calc(100% - 20px);
+      padding:10px;
+      font-size:24px;
+      text-align: center;
+      background-color:cL($primary-color,5%);
+    }
+    .content{
+      overflow: hidden;
+      text-align: center;
+      padding:35px 30px;
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
