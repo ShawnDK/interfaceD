@@ -8,7 +8,7 @@
 /*
     Display
  */
-body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div {
+body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flexbox;
@@ -19,7 +19,7 @@ body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #d
 /*
     Flex direction
  */
-#nav, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content div {
+#nav, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -44,7 +44,7 @@ body, #destinationsFavourite, #destinationsHistory, #flightSearchResultsAndFilte
   -ms-flex-wrap: none;
   flex-wrap: nowrap; }
 
-body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div {
+body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -98,7 +98,7 @@ body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory
   -webkit-justify-content: space-between;
   justify-content: space-between; }
 
-#flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content div {
+#flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
   -moz-justify-content: space-around;
   -webkit-justify-content: space-around;
   justify-content: space-around; }
@@ -745,6 +745,8 @@ CONFIRMATION PAGE
     #modalWindowConfirmation .window .continue {
       padding: 20px; }
       #modalWindowConfirmation .window .continue .btnContinue {
+        float: right;
+        margin-bottom: 10px;
         padding: 10px;
         padding-left: 25px;
         padding-right: 20px;
@@ -897,7 +899,7 @@ CONFIRMATION PAGE
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2; }
   #modalWindowDetailsPayment .window {
-    height: 600px;
+    height: 450px;
     overflow-y: auto;
     width: 975px;
     background-color: #efefef;
@@ -933,11 +935,19 @@ CONFIRMATION PAGE
             padding: 4px;
             margin-bottom: 6px;
             width: 80%; }
-          #modalWindowDetailsPayment .window .content .left .content div {
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs input {
+            width: 39%;
+            float: left;
+            margin-right: 4px; }
+          #modalWindowDetailsPayment .window .content .left .content .trippleInputs select {
+            float: left;
+            height: 27px;
+            margin-right: 4px; }
+          #modalWindowDetailsPayment .window .content .left .content .doubleInputs {
             width: 84%; }
-            #modalWindowDetailsPayment .window .content .left .content div input {
+            #modalWindowDetailsPayment .window .content .left .content .doubleInputs input {
               width: 45%;
-              float: left; }
+              float: right; }
       #modalWindowDetailsPayment .window .content .right {
         width: 450px;
         float: left; }
@@ -954,8 +964,13 @@ CONFIRMATION PAGE
             width: 50px; }
           #modalWindowDetailsPayment .window .content .right input:nth-child(4) {
             width: 35px; }
+        #modalWindowDetailsPayment .window .content .right input.same {
+          width: 105px; }
         #modalWindowDetailsPayment .window .content .right h3:nth-child(6) {
           margin-top: 30px; }
+        #modalWindowDetailsPayment .window .content .right h3 select {
+          margin-left: 20px;
+          height: 19px; }
         #modalWindowDetailsPayment .window .content .right div:nth-child(7) {
           margin-left: 40px;
           font-weight: bold;

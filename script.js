@@ -146,6 +146,7 @@ if(!isClassAdded){
     }
   }
 }
+
   // $(this).parent().parent().children(".option").children(".price").children().css("background-color","initial");
   // $(this).children().css("background-color","#196aaa");
   
@@ -163,6 +164,11 @@ $(".btnContinue").click(function(){
 $(".btnContinue2").click(function(){
   $("#modalWindowCarHotel").css("display","none");
   $("#modalWindowDetailsPayment").css("display","block");
+});
+
+$(".btnPay").click(function(){
+  $("#modalWindowDetailsPayment").css("display","none");
+  $("#modalWindowSuccessfulPurchase").css("display","block");
 });
 
 $(".btnAdd").click(function(){
