@@ -990,6 +990,9 @@ CONFIRMATION PAGE
   .favourite-images {
     justify-content: space-around !important; }
 
+  #modalWindowConfirmation .window {
+    width: 90%; }
+
   .modalWindowPaymentBG .window {
     margin-top: 40px;
     width: 700px; }
