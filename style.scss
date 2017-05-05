@@ -1672,6 +1672,21 @@ a.btn_yellow {
   color: #666;
 }
 
+/*****************Edit Profile*************/
 
+#editProfile{
+    @include display-flex();
+    @include flex-flow(row,nowrap);
+    width: 100%;
+    height: 93vh;
+}
 
+#left{
+    background-color: aqua;
+    width: 50%;
+}
 
+#right{
+    background-color: bisque;
+    width: 50%;
+}
