@@ -119,13 +119,21 @@ $(".stopsVisual").hover(function(){
   $(this).children().last().css("display","block");
 },function(){
   $(this).children().last().css("display","none");
-}); 
+});   
 
 
 /*BTN SELECT - show fare page*/
 $(".btnSelect").click(function(){
   $("#modalWindowConfirmation").css("display","block");
 }); 
+
+$('#modalWindowConfirmation').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowConfirmation > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
+
 
 var c1Selected = 0;
 var c2Selected = 0;
@@ -160,15 +168,33 @@ $(".btnContinue").click(function(){
     $("#modalWindowCarHotel").css("display","block");
   }
 });
+$('#modalWindowCarHotel').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowCarHotel > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
 
 $(".btnContinue2").click(function(){
   $("#modalWindowCarHotel").css("display","none");
   $("#modalWindowDetailsPayment").css("display","block");
 });
+$('#modalWindowDetailsPayment').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowDetailsPayment > .window').on('click', function(e) {  
+    e.stopPropagation();
+});
 
 $(".btnPay").click(function(){
   $("#modalWindowDetailsPayment").css("display","none");
   $("#modalWindowSuccessfulPurchase").css("display","block");
+});
+$('#modalWindowSuccessfulPurchase').on('click', function() {  
+    $(this).hide();
+});
+$('#modalWindowSuccessfulPurchase > .window').on('click', function(e) {  
+    e.stopPropagation();
 });
 
 $(".btnAdd").click(function(){
