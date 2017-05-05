@@ -8,7 +8,7 @@
 /*
     Display
  */
-body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div, #editProfile, #left {
+body, #nav, #nav #leftNav, #nav #rightNav, #searchBox, #searchBox .flex-form, #destinationsFavourite, #destinationsHistory, #destinationsFavourite .favourite-images, #destinationsHistory .favourite-images, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #flightSearchResultsAndFilters #flightSearchResults .flightOption .flightItems .flightItem, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside, #flightSearchResultsAndFilters #flightSearchResults .flightOption .aside .btnGroup, .modalWindowPaymentBG .window .content .left .content, .modalWindowPaymentBG .window .content .left .content div, #modalWindowDetailsPayment .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content div, #editProfile {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flexbox;
@@ -80,7 +80,7 @@ body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory
   -webkit-justify-content: flex-end;
   justify-content: flex-end; }
 
-#searchBox, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #left {
+#searchBox, #SearchWrap, #flightSearchInfo, #flightSearchResultsAndFilters, #editProfile {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -webkit-flex-pack: center;
@@ -120,7 +120,7 @@ body, #searchBox, #destinationsFavourite .favourite-images, #destinationsHistory
   -moz-align-items: flex-end;
   align-items: flex-end; }
 
-body, #nav #leftNav, #nav #rightNav, #destinationsFavourite, #destinationsHistory, .modalWindowPaymentBG .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content, #left {
+body, #nav #leftNav, #nav #rightNav, #destinationsFavourite, #destinationsHistory, .modalWindowPaymentBG .window .content .left .content, #modalWindowDetailsPayment .window .content .left .content, #editProfile {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -1444,15 +1444,13 @@ a.btn_yellow {
   width: 100%;
   height: 93vh; }
 
-#left {
-  background-color: aqua;
-  width: 50%; }
-
-#right {
-  background-color: bisque;
-  width: 50%; }
+#info {
+  padding-left: 50px;
+  color: #ededed;
+  font-size: 25px; }
 
 #Profileimage {
-  width: 300px; }
+  width: 300px;
+  padding-right: 90px; }
 
 /*# sourceMappingURL=style.css.map */
