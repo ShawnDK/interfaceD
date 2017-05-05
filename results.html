@@ -306,6 +306,7 @@
 	</div>
 </div>
 
+<!--
 <div id="nav">
             <div id="leftNav">
                 <img id="logo" src="images/logo.png" width="100px" alt="">
@@ -336,7 +337,50 @@
                     </div>
                 </div> 
                 <image id="profile" src="images/profilePic2.png"></image>
+            </div> -->
+	            <div id="nav">
+            <div id="leftNav">
+		<div style="height: 200%;width: 200px;margin-top: 50px;background-color: #15598F;border-radius: 5px;z-index: 1;">
+			<img id="logo" src="images/bizzybee1.svg" style="height: 100%;" alt="">
+		</div>
+                <a href="">Flights</a>
+                <a href="">Hotel</a>
+                <a href="">Transport</a>
+                <a href="">Offers</a>
             </div>
+            <div id="rightNav">
+                <div id="currency" tabindex="1" onblur="myBlurL()">
+                    <div id="currencyPicked">
+                        <image src="images/dkflag.png"></image>
+                        <span>Dansk (DKK)</span>
+                    </div>
+                    <div id="currencyOptions">
+                        <div class="currencyOption">
+                            <image src="images/dkflag.png"></image>
+                            <span>Dansk (DKK)</span>
+                        </div>
+                        <div class="currencyOption">
+                            <image src="images/usflag.png"></image>
+                            <span>English (USD)</span>
+                        </div>
+                        <div class="currencyOption">
+                            <image src="images/ukflag.png"></image>
+                            <span>English (GBP)</span>
+                        </div>
+                    </div>
+                </div> 
+                <ul>
+                  <li id="login"><a id="modal_trigger" href="#modal"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a></li>
+                  <li><a><div class="color-white" id="status"></a></li>
+                  <li><a><div class="color-white" id="name"></div></a></li>
+                  <li onclick="signOut();" id="signout" ><a><span><i class="fa fa-sign-out" aria-hidden="true"></i></span> Logout</a></li>
+                  <li onclick="logout();" id="logout" ><a><span><i class="fa fa-sign-out" aria-hidden="true"></i></span> Logout</a></li>
+                  <li onclick="logoutadmin();" id="logoutadmin" ><a><span><i class="fa fa-sign-out" aria-hidden="true"></i></span> Logout</a></li>
+                  
+                </ul>
+           <!--     <image id="profile" src="images/profilePic.png"></image>-->
+            </div>
+        </div>
 </div>
 
 <div id="SearchWrap">
